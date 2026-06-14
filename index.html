@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Nathan Schneider Fetique — Étudiant BUT Réseaux & Télécommunications" />
+  <title>Nathan Schneider Fetique — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <a href="#accueil" class="nav-logo">NSF<span>.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#accueil"   class="nav-link" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#projets"   class="nav-link" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#competences" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#contact"   class="nav-link" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="lang-toggle" class="lang-btn" aria-label="Changer la langue">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil" class="section hero-section">
+      <div class="hero-content fade-in">
+        <p class="hero-greeting" data-i18n="hero.greeting">Bonjour, je suis</p>
+        <h1 class="hero-name">Nathan Schneider Fetique</h1>
+        <h2 class="hero-title" data-i18n="hero.title">Étudiant BUT Réseaux &amp; Télécommunications</h2>
+        <p class="hero-school" data-i18n="hero.school">IUT de Colmar — 1ère année</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">
+          Je suis passionné par les réseaux et les systèmes embarqués.
+          J'aime comprendre comment les choses fonctionnent et les configurer moi-même.
+        </p>
+        <div class="hero-cta">
+          <a href="#projets" class="btn btn-primary" data-i18n="hero.cta.projects">Voir mes projets</a>
+          <a href="#contact" class="btn btn-outline" data-i18n="hero.cta.contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-in">
+        <div class="hero-avatar">
+          <span>NSF</span>
+        </div>
+        <div class="hero-badge" data-i18n="hero.badge">BUT R&amp;T 2025-2028</div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETS ===== -->
+    <section id="projets" class="section">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="projects.tag">Portfolio</span>
+        <h2 class="section-title" data-i18n="projects.title">Projets</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">
+          Projets réalisés en formation
+        </p>
+      </div>
+
+      <!-- Semestre 1 -->
+      <div class="semester-block">
+        <div class="semester-label fade-in">
+          <span data-i18n="semester.s1">Semestre 1</span>
+        </div>
+        <div class="projects-grid" data-project-grid="s1">
+
+          <!-- Projet 1.01 -->
+          <article class="project-card fade-in" data-project="sae101">
+            <div class="card-header">
+              <span class="card-tag">Projet 1.01</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae101.title">Sensibilisation à l'hygiène informatique et à la cybersécurité</h3>
+            <p class="card-desc" data-i18n="sae101.desc">
+              On a fait une présentation orale sur le cheval de Troie en groupe. On a préparé une vidéo et un PowerPoint pour expliquer comment ça marche et comment s'en protéger.
+            </p>
+            <p class="card-reflect" data-i18n="sae101.reflect">💡 J'ai vraiment découvert comment les malwares fonctionnent et j'ai appris à expliquer des trucs techniques de façon simple pour que tout le monde comprenne.</p>
+            <div class="card-tags">
+              <span class="badge badge-red">Cybersécurité</span>
+              <span class="badge badge-orange">Cheval de Troie</span>
+              <span class="badge badge-purple">PowerPoint</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 1.02 -->
+          <article class="project-card fade-in" data-project="sae102">
+            <div class="card-header">
+              <span class="card-tag">Projet 1.02</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae102.title">S'initier aux réseaux informatiques</h3>
+            <p class="card-desc" data-i18n="sae102.desc">
+              Simulation de l'infrastructure réseau d'une succursale d'entreprise sous EVE-NG.
+              4 VLANs, plan d'adressage VLSM, routage inter-VLAN et serveur DHCP Linux.
+            </p>
+            <p class="card-reflect" data-i18n="sae102.reflect">💡 C'est ce projet qui m'a vraiment appris à concevoir un réseau de zéro. Le VLSM c'était casse-tête au départ mais une fois que j'ai compris la logique c'était presque fun.</p>
+            <div class="card-tags">
+              <span class="badge badge-green">EVE-NG</span>
+              <span class="badge badge-orange">VLAN 802.1Q</span>
+              <span class="badge badge-blue">VLSM</span>
+              <span class="badge badge-green">Cisco IOS</span>
+              <span class="badge badge-purple">VTP v2</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 1.03 -->
+          <article class="project-card fade-in" data-project="sae103">
+            <div class="card-header">
+              <span class="card-tag">Projet 1.03</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae103.title">Découvrir un dispositif de transmission</h3>
+            <p class="card-desc" data-i18n="sae103.desc">
+              Campagne de mesures WiFi sur plusieurs zones du campus : bâtiment C, bibliothèque universitaire et comparaison de réseaux 802.11a 5 GHz / 802.11g 2.4 GHz.
+            </p>
+            <p class="card-reflect" data-i18n="sae103.reflect">💡 Ce projet m'a appris à analyser concrètement une couverture WiFi et à relier les mesures terrain avec la position des points d'accès, la fréquence utilisée et l'architecture du bâtiment.</p>
+            <div class="card-tags">
+              <span class="badge badge-blue">WiFi</span>
+              <span class="badge badge-orange">802.11</span>
+              <span class="badge badge-green">2.4 GHz</span>
+              <span class="badge badge-purple">5 GHz</span>
+              <span class="badge badge-red">Mesures terrain</span>
+            </div>
+            <button class="card-detail-btn" type="button" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 1.04 -->
+          <article class="project-card fade-in" data-project="sae104">
+            <div class="card-header">
+              <span class="card-tag">Projet 1.04</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae104.title">Se présenter sur internet</h3>
+            <p class="card-desc" data-i18n="sae104.desc">
+              Création d'un CV en ligne multi-pages en HTML/CSS. Navigation inter-pages, section compétences en Flexbox et mise en page responsive.
+            </p>
+            <p class="card-reflect" data-i18n="sae104.reflect">💡 C'est le projet qui m'a vraiment mis le pied à l'étrier en HTML/CSS. Partir d'une page blanche et arriver à un vrai site c'était satisfaisant.</p>
+            <div class="card-tags">
+              <span class="badge badge-orange">HTML5</span>
+              <span class="badge badge-blue">CSS3</span>
+              <span class="badge badge-purple">Flexbox</span>
+              <span class="badge badge-green">Responsive</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 1.05 -->
+          <article class="project-card fade-in" data-project="sae105">
+            <div class="card-header">
+              <span class="card-tag">Projet 1.05</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae105.title">Traiter des données</h3>
+            <p class="card-desc" data-i18n="sae105.desc">
+              Outil Python/PowerShell pour localiser et supprimer les gros fichiers d'un disque. Interface graphique PyQt5 avec visualisation en camembert et cases à cocher.
+            </p>
+            <p class="card-reflect" data-i18n="sae105.reflect">💡 C'est là que j'ai vraiment appris à faire communiquer plusieurs scripts ensemble. Orchestrer Python depuis PowerShell via JSON c'était une approche que je ne connaissais pas du tout.</p>
+            <div class="card-tags">
+              <span class="badge badge-blue">Python</span>
+              <span class="badge badge-purple">PyQt5</span>
+              <span class="badge badge-orange">PowerShell</span>
+              <span class="badge badge-green">pathlib</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Semestre 2 -->
+      <div class="semester-block">
+        <div class="semester-label fade-in">
+          <span data-i18n="semester.s2">Semestre 2</span>
+        </div>
+        <div class="projects-grid" data-project-grid="s2">
+
+          <!-- Projet 2.01 -->
+          <article class="project-card fade-in" data-project="saegns3">
+            <div class="card-header">
+              <span class="card-tag">Projet 2.01</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="saegns3.title">Construire un réseau</h3>
+            <p class="card-desc" data-i18n="saegns3.desc">
+              Déploiement complet d'une infrastructure réseau sous GNS3 : 3 VLANs, routage inter-VLAN, VLSM, RIPv2, serveurs FTP et Web, ACL et port-security.
+            </p>
+            <p class="card-reflect" data-i18n="saegns3.reflect">💡 C'est le projet où j'ai tout mis ensemble en même temps : VLANs, routage, services réseau et sécurité. Voir la topologie complète fonctionner dans GNS3 c'était vraiment gratifiant.</p>
+            <div class="card-tags">
+              <span class="badge badge-green">GNS3</span>
+              <span class="badge badge-blue">Cisco IOS</span>
+              <span class="badge badge-orange">RIPv2</span>
+              <span class="badge badge-purple">ACL</span>
+              <span class="badge badge-red">port-security</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 2.02 -->
+          <article class="project-card fade-in" data-project="sae202">
+            <div class="card-header">
+              <span class="card-tag">Projet 2.02</span>
+              <div class="card-status" data-i18n="card.status.completed">Complété</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae202.title">Web Radio ESP32</h3>
+            <p class="card-desc" data-i18n="sae202.desc">
+              Conception progressive d'une radio internet avec un ESP32 HUZZAH32 et un décodeur VS1053. Contrôle volume, tonalité et spatialisation, WiFiManager et pilotage MQTT depuis Android.
+            </p>
+            <p class="card-reflect" data-i18n="sae202.reflect">💡 Ce projet était surtout très technique. Lire les datasheets du VS1053 pour implémenter la spatialisation à la main et faire communiquer un téléphone Android avec l'ESP32 via MQTT c'était une vraie satisfaction.</p>
+            <div class="card-tags">
+              <span class="badge badge-orange">ESP32 HUZZAH32</span>
+              <span class="badge badge-red">VS1053</span>
+              <span class="badge badge-blue">WiFiManager</span>
+              <span class="badge badge-green">MQTT</span>
+              <span class="badge badge-purple">Arduino C</span>
+            </div>
+            <button class="card-detail-btn" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+          <!-- Projet 2.03 -->
+          <article class="project-card fade-in featured" data-project="sae203">
+            <div class="card-header">
+              <span class="card-tag">Projet 2.03</span>
+              <div class="card-status card-status--featured" data-i18n="card.status.highlight">Projet phare</div>
+            </div>
+            <h3 class="card-title" data-i18n="sae203.title">Mettre en place une solution informatique pour l’entreprise</h3>
+            <p class="card-desc" data-i18n="sae203.desc">
+              Création en groupe d'un site web de gestion de Drive : base de données, CRUD catégories/produits/clients/commandes, import de produits par fichier et génération de fiches commande.
+            </p>
+            <p class="card-reflect" data-i18n="sae203.reflect">💡 C'est mon projet phare parce qu'il rassemble développement web, base de données, déploiement Linux et travail collaboratif dans une vraie application métier.</p>
+            <div class="card-tags">
+              <span class="badge badge-orange">Développement web</span>
+              <span class="badge badge-blue">Base de données</span>
+              <span class="badge badge-green">CRUD</span>
+              <span class="badge badge-purple">Linux</span>
+              <span class="badge badge-red">GitHub</span>
+            </div>
+            <button class="card-detail-btn" type="button" data-i18n="modal.btn.detail">Détails →</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPÉTENCES ===== -->
+    <section id="competences" class="section skills-section">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="skills.tag">Expertise</span>
+        <h2 class="section-title" data-i18n="skills.title">Compétences</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">Technologies et outils maîtrisés</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- UE2.1 Administrer -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="8" y="14" width="8" height="8" rx="1"/><path d="M6 10v1a2 2 0 002 2h8a2 2 0 002-2v-1"/><line x1="12" y1="12" x2="12" y2="14"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="skills.ue21">UE2.1 — Administrer</h3>
+              <p class="skill-category-sub" data-i18n="skills.ue21.sub">Administrer les réseaux et l'Internet</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">TCP/IP</span>
+            <span class="skill-tag">VLAN</span>
+            <span class="skill-tag">STP</span>
+            <span class="skill-tag">RIPv2</span>
+            <span class="skill-tag">GNS3</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Cisco IOS</span>
+          </div>
+        </div>
+
+        <!-- UE2.2 Connecter -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="skills.ue22">UE2.2 — Connecter</h3>
+              <p class="skill-category-sub" data-i18n="skills.ue22.sub">Connecter les entreprises et les usagers</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux / Debian</span>
+            <span class="skill-tag">Windows Server</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">Samba</span>
+          </div>
+        </div>
+
+        <!-- UE2.3 Programmer -->
+        <div class="skill-category fade-in">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <h3 data-i18n="skills.ue23">UE2.3 — Programmer</h3>
+              <p class="skill-category-sub" data-i18n="skills.ue23.sub">Créer des outils et applications pour les R&amp;T</p>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C / Arduino</span>
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">MQTT</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header fade-in">
+        <span class="section-tag" data-i18n="contact.tag">Restons en contact</span>
+        <h2 class="section-title" data-i18n="contact.title">Me contacter</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          Ouvert aux opportunités de stage et aux collaborations
+        </p>
+      </div>
+
+      <div class="contact-cards fade-in">
+
+        <a href="https://www.linkedin.com/in/nathan-schneider-fetique-17a2b13b2" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn" title="Mettre à jour l'URL LinkedIn dans index.html">
+          <div class="contact-icon contact-icon--linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-handle" data-i18n="contact.linkedin.handle">Nathan Schneider Fetique</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+
+        <a href="https://github.com/QuantumCommit7" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub">
+          <div class="contact-icon contact-icon--github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-handle" data-i18n="contact.github.handle">@QuantumCommit7</span>
+          </div>
+          <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+
+      </div>
+
+      <p class="contact-note fade-in" data-i18n="contact.note">
+        N'hésitez pas à me contacter pour toute opportunité de stage ou de collaboration.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p data-i18n="footer.text">© 2026 Nathan Schneider Fetique — BUT Réseaux &amp; Télécommunications, IUT de Colmar</p>
+  </footer>
+
+  <!-- ===== MODAL PROJET ===== -->
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-box" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-tag" id="modal-tag"></span>
+          <h2 class="modal-title" id="modal-title"></h2>
+        </div>
+        <div class="modal-body">
+          <div class="modal-images" id="modal-images"></div>
+          <div class="modal-info">
+            <div class="modal-section">
+              <h3 id="modal-label-context"></h3>
+              <p id="modal-context"></p>
+            </div>
+            <div class="modal-section">
+              <h3 id="modal-label-learned"></h3>
+              <p id="modal-learned"></p>
+            </div>
+            <div class="modal-section">
+              <h3 id="modal-label-tech"></h3>
+              <div class="modal-badges" id="modal-badges"></div>
+            </div>
+            <div class="modal-section">
+              <h3 id="modal-label-proof"></h3>
+              <div class="modal-proof-box" id="modal-proof"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
