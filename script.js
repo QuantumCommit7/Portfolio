@@ -93,7 +93,9 @@ const translations = {
 
     'modal.btn.detail':    'Détails →',
     'modal.label.context': 'Contexte',
+    'modal.label.tasks':   'Mes tâches personnelles',
     'modal.label.learned': 'Ce que j\'ai appris',
+    'modal.label.english': 'Résumé anglais',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Preuves & Documents',
 
@@ -195,7 +197,9 @@ const translations = {
 
     'modal.btn.detail':    'Details →',
     'modal.label.context': 'Context',
+    'modal.label.tasks':   'My personal tasks',
     'modal.label.learned': 'What I learned',
+    'modal.label.english': 'English summary',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Proof & Documents',
 
@@ -644,9 +648,11 @@ const projectModals = {
       tag: 'Projet 2.03',
       title: 'Mettre en place une solution informatique pour l’entreprise',
       context: 'Ce projet consistait à développer en groupe une application web Django simulant la gestion d\'un drive de supermarché. L\'application est organisée autour de cinq entités liées en base de données : catégories, produits, clients, commandes et lignes de commande. Elle propose un tableau de bord avec compteurs, un CRUD complet pour les données principales, une fiche client avec historique des commandes, et une page de détail commande où l\'on peut ajouter des produits, modifier les quantités, retirer des lignes et calculer automatiquement les totaux.',
-      learned: 'Ce projet m\'a fait travailler sur une vraie chaîne applicative : modèles Django reliés à un schéma SQL, vues et routes CRUD, templates HTML, interface d\'administration, API JSON et JavaScript vanilla pour l\'autocomplétion des produits. J\'ai aussi découvert les contraintes de déploiement avec une VM Linux, Apache, MariaDB, des scripts d\'installation et une configuration capable de basculer entre MariaDB en réseau et SQLite en local. C\'est pour ça que ce projet représente bien ma progression : il mélange développement, base de données, UX, tests et organisation d\'un dépôt commun.',
-      badges: ['Django', 'Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'API JSON', 'JavaScript', 'Autocomplete', 'Apache', 'Linux VM', 'Tests Django'],
-      proof: 'Dépôt GitHub du projet : <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a> — l\'application contient les modèles, vues, routes, templates, scripts de déploiement, tests Django, Gantt et procédure de déploiement ci-dessous.',
+      tasks: 'Personnellement, je me suis occupé de la base SQL du projet : définition des tables, relations entre catégories, produits, clients, commandes et lignes de commande, clés étrangères et données de test. J\'ai aussi participé au débogage Python côté Django, notamment pour vérifier que les vues, les routes, les calculs de commande et l\'accès aux données fonctionnaient correctement.',
+      learned: 'Ce projet m\'a fait progresser sur la modélisation d\'une base de données relationnelle et sur le lien entre SQL et Django. Le débogage Python m\'a aussi appris à lire les erreurs, remonter à leur cause, vérifier les échanges entre modèles, vues et templates, puis tester les corrections dans une application complète. C\'est pour ça que ce projet représente bien ma progression : il mélange base de données, développement web, débogage, tests et organisation d\'un dépôt commun.',
+      englishSummary: 'SAE 2.03 was a group project focused on building a Django web application for supermarket Drive management. My personal contribution was mainly the SQL database structure and Python debugging. This project helped me improve my database modelling skills and understand how Django connects models, views, templates and real data.',
+      badges: ['Django', 'Python', 'Débogage Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'API JSON', 'JavaScript', 'Apache', 'Linux VM', 'Tests Django'],
+      proof: 'Dépôt GitHub du projet : <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a><br><strong>Preuves principales :</strong> schéma SQL dans <code>database.sql</code>, modèles dans <code>drive/models.py</code>, vues Python dans <code>drive/views.py</code>, tests Django dans <code>drive/tests.py</code>, Gantt et procédure de déploiement ci-dessous.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {
@@ -725,9 +731,11 @@ const projectModals = {
       tag: 'Project 2.03',
       title: 'Deploy an IT solution for a company',
       context: 'This group project consisted of building a Django web application that simulates supermarket Drive management. The application is structured around five linked database entities: categories, products, customers, orders and order lines. It includes a dashboard with counters, full CRUD for the main data, a customer detail page with order history, and an order detail page where products can be added, quantities edited, lines removed and totals calculated automatically.',
-      learned: 'This project made me work across a full application chain: Django models connected to a SQL schema, CRUD views and routes, HTML templates, Django admin, a JSON API and vanilla JavaScript for product autocomplete. I also discovered deployment constraints with a Linux VM, Apache, MariaDB, installation scripts and a configuration that switches between MariaDB on the network and local SQLite. That is why this project represents my progress well: it combines development, databases, UX, tests and shared repository organisation.',
-      badges: ['Django', 'Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'JSON API', 'JavaScript', 'Autocomplete', 'Apache', 'Linux VM', 'Django tests'],
-      proof: 'Project GitHub repository: <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a> — the application includes models, views, routes, templates, deployment scripts, Django tests, the Gantt chart and deployment procedure below.',
+      tasks: 'My personal work focused mainly on the SQL database: defining the tables, the relationships between categories, products, customers, orders and order lines, foreign keys and test data. I also took part in Python debugging on the Django side, checking that views, routes, order calculations and data access behaved correctly.',
+      learned: 'This project helped me improve my relational database modelling and understand the link between SQL and Django. Python debugging also taught me to read errors, trace them back to their cause, check the interactions between models, views and templates, and test fixes inside a complete application. That is why this project represents my progress well: it combines databases, web development, debugging, tests and shared repository organisation.',
+      englishSummary: 'SAE 2.03 was a group project focused on building a Django web application for supermarket Drive management. My personal contribution was mainly the SQL database structure and Python debugging. This project helped me improve my database modelling skills and understand how Django connects models, views, templates and real data.',
+      badges: ['Django', 'Python', 'Python debugging', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'JSON API', 'JavaScript', 'Apache', 'Linux VM', 'Django tests'],
+      proof: 'Project GitHub repository: <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a><br><strong>Main evidence:</strong> SQL schema in <code>database.sql</code>, models in <code>drive/models.py</code>, Python views in <code>drive/views.py</code>, Django tests in <code>drive/tests.py</code>, the Gantt chart and deployment procedure below.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {
@@ -761,8 +769,18 @@ function openModal(projectKey, trigger = null) {
   document.getElementById('modal-title').textContent        = data.title;
   document.getElementById('modal-label-context').textContent = t['modal.label.context'];
   document.getElementById('modal-context').textContent      = data.context;
+  const tasksSection = document.getElementById('modal-tasks-section');
+  const tasksText = document.getElementById('modal-tasks');
+  tasksSection.hidden = !data.tasks;
+  document.getElementById('modal-label-tasks').textContent  = t['modal.label.tasks'];
+  tasksText.textContent = data.tasks || '';
   document.getElementById('modal-label-learned').textContent = t['modal.label.learned'];
   document.getElementById('modal-learned').textContent      = data.learned;
+  const englishSection = document.getElementById('modal-english-section');
+  const englishText = document.getElementById('modal-english');
+  englishSection.hidden = !data.englishSummary;
+  document.getElementById('modal-label-english').textContent = t['modal.label.english'];
+  englishText.textContent = data.englishSummary || '';
   document.getElementById('modal-label-tech').textContent   = t['modal.label.tech'];
   document.getElementById('modal-label-proof').textContent  = t['modal.label.proof'];
   document.getElementById('modal-proof').innerHTML          = data.proof;
