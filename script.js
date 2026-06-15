@@ -15,6 +15,7 @@ const translations = {
     'hero.title':    'Étudiant BUT Réseaux & Télécommunications',
     'hero.school':   'IUT de Colmar — 1ère année',
     'hero.tagline':  'Je suis passionné par les réseaux et les systèmes embarqués. J\'aime comprendre comment les choses fonctionnent et les configurer moi-même.',
+    'hero.evolution': 'Ce portfolio est en d\u00e9veloppement constant tout au long de ma carri\u00e8re en BUT. Il \u00e9voluera au fur et \u00e0 mesure de mes projets, comp\u00e9tences et exp\u00e9riences.',
     'hero.cta.projects': 'Voir mes projets',
     'hero.cta.contact':  'Me contacter',
     'hero.badge':    'BUT R&T 2025-2028',
@@ -25,6 +26,8 @@ const translations = {
 
     'semester.s1': 'Semestre 1',
     'semester.s2': 'Semestre 2',
+    'semester.toggle.hide': 'Masquer les projets',
+    'semester.toggle.show': 'Afficher les projets',
 
     'card.status.completed': 'Complété',
     'card.status.highlight': 'Projet phare',
@@ -52,7 +55,7 @@ const translations = {
     'sae202.desc':  'Conception progressive d\'une radio internet avec un ESP32 HUZZAH32 et un décodeur VS1053. Contrôle volume, tonalité et spatialisation, gestion WiFi via WiFiManager et pilotage à distance par MQTT depuis Android.',
 
     'sae203.title': 'Mettre en place une solution informatique pour l’entreprise',
-    'sae203.desc':  'Création en groupe d\'un site web de gestion de Drive : base de données, CRUD catégories/produits/clients/commandes, import de produits par fichier et génération de fiches commande.',
+    'sae203.desc':  'Application web Django de gestion de Drive : catalogue produits, clients, commandes, base SQL, API d\'autocomplétion et déploiement sur environnement Linux.',
 
     'saegns3.title': 'Construire un réseau',
     'saegns3.desc':  'Déploiement complet d\'une infrastructure réseau sous GNS3 : 3 VLANs, routage inter-VLAN, adressage VLSM, RIPv2, serveurs FTP et Web, sécurisation par ACL et port-security.',
@@ -62,7 +65,7 @@ const translations = {
     'sae102.reflect':  '💡 C\'est ce projet qui m\'a vraiment appris à concevoir un réseau de zéro. Le VLSM c\'était casse-tête au départ mais une fois que j\'ai compris la logique c\'était presque fun.',
     'sae103.reflect':  '💡 Ce projet m\'a appris à analyser concrètement une couverture WiFi et à relier les mesures terrain avec la position des points d\'accès, la fréquence utilisée et l\'architecture du bâtiment.',
     'sae202.reflect':  '💡 Ce projet était surtout très technique. Lire les datasheets du VS1053 pour implémenter la spatialisation à la main et faire communiquer un téléphone Android avec l\'ESP32 via MQTT c\'était une vraie satisfaction.',
-    'sae203.reflect':  '💡 C\'est mon projet phare parce qu\'il rassemble développement web, base de données, déploiement Linux et travail collaboratif dans une vraie application métier.',
+    'sae203.reflect':  '💡 C\'est mon projet phare parce qu\'il relie développement web, base de données, UX, tests, déploiement Linux et travail collaboratif dans une vraie application métier.',
     'saegns3.reflect': '💡 C\'est le projet où j\'ai tout mis ensemble en même temps : VLANs, routage, services réseau et sécurité. Voir la topologie complète fonctionner dans GNS3 c\'était vraiment gratifiant.',
 
     'skill.proof.network':     'Prouvé par : Projet 1.02, Projet 1.03, Infrastructure GNS3',
@@ -114,6 +117,7 @@ const translations = {
     'hero.title':    'Networks & Telecommunications Student',
     'hero.school':   'IUT de Colmar — 1st year',
     'hero.tagline':  'I\'m passionate about networking and embedded systems. I like to understand how things work and set them up myself.',
+    'hero.evolution': 'This portfolio is under constant development throughout my BUT studies. It will keep improving as I add new projects, skills and experiences.',
     'hero.cta.projects': 'View my projects',
     'hero.cta.contact':  'Get in touch',
     'hero.badge':    'BUT R&T 2025-2028',
@@ -124,6 +128,8 @@ const translations = {
 
     'semester.s1': 'Semester 1',
     'semester.s2': 'Semester 2',
+    'semester.toggle.hide': 'Hide projects',
+    'semester.toggle.show': 'Show projects',
 
     'card.status.completed': 'Completed',
     'card.status.highlight': 'Featured',
@@ -151,7 +157,7 @@ const translations = {
     'sae202.desc':  'Progressive build of an internet radio with an ESP32 HUZZAH32 and VS1053 decoder. Volume, tone and spatialisation controls, WiFi management via WiFiManager and remote control over MQTT from Android.',
 
     'sae203.title': 'Deploy an IT solution for a company',
-    'sae203.desc':  'Group project building a Drive management web application: database, CRUD for categories/products/customers/orders, product import from a file and order summary generation.',
+    'sae203.desc':  'Django web application for Drive management: product catalogue, customers, orders, SQL database, autocomplete API and deployment on a Linux environment.',
 
     'saegns3.title': 'Build a network',
     'saegns3.desc':  'Full enterprise network deployment in GNS3: 3 VLANs, inter-VLAN routing, VLSM addressing, RIPv2, FTP and Web servers, ACL and port-security hardening.',
@@ -161,7 +167,7 @@ const translations = {
     'sae102.reflect':  '💡 This is the project that really taught me to design a network from scratch. VLSM was confusing at first but once the logic clicked it was actually pretty fun.',
     'sae103.reflect':  '💡 This project taught me how to analyse WiFi coverage in the field and connect measurements with access point placement, frequency bands and building layout.',
     'sae202.reflect':  '💡 This project was mainly very technical. Reading the VS1053 datasheet to implement spatialisation by hand and getting an Android phone talking to the ESP32 over MQTT was really satisfying.',
-    'sae203.reflect':  '💡 This is my featured project because it brings together web development, databases, Linux deployment and teamwork in a real business-style application.',
+    'sae203.reflect':  '💡 This is my featured project because it connects web development, databases, UX, tests, Linux deployment and teamwork in a real business-style application.',
     'saegns3.reflect': '💡 This is the project where I put everything together at once: VLANs, routing, network services and security. Getting the full topology working in GNS3 was really rewarding.',
 
     'skill.proof.network':     'Proven by: Project 1.02, Project 1.03, GNS3 Infrastructure',
@@ -319,11 +325,11 @@ const projectCardGroups = {
       reflectKey: 'sae203.reflect',
       featured: true,
       badges: [
-        { label: 'Développement web', color: 'orange' },
-        { label: 'Base de données', color: 'blue' },
+        { label: 'Django', color: 'orange' },
+        { label: 'SQL', color: 'blue' },
         { label: 'CRUD', color: 'green' },
-        { label: 'Linux', color: 'purple' },
-        { label: 'GitHub', color: 'red' },
+        { label: 'API', color: 'purple' },
+        { label: 'Linux', color: 'red' },
       ],
     },
   ],
@@ -422,6 +428,7 @@ function applyTranslations(lang) {
     if (value !== undefined) el.innerHTML = value;
   });
   document.documentElement.setAttribute('lang', lang);
+  updateSemesterToggleLabels();
 }
 
 function toggleLanguage() {
@@ -432,6 +439,39 @@ function toggleLanguage() {
 }
 
 document.getElementById('lang-toggle').addEventListener('click', () => toggleLanguage());
+
+/* ===== COLLAPSIBLE SEMESTERS ===== */
+function updateSemesterToggleLabels() {
+  document.querySelectorAll('[data-semester-block]').forEach(block => {
+    const toggle = block.querySelector('[data-semester-toggle]');
+    const state = block.querySelector('[data-semester-state]');
+    const title = toggle?.querySelector('[data-i18n]');
+    if (!toggle || !state) return;
+
+    const isCollapsed = block.classList.contains('is-collapsed');
+    const stateKey = isCollapsed ? 'semester.toggle.show' : 'semester.toggle.hide';
+    const stateText = translations[currentLang][stateKey] || translations.fr[stateKey];
+
+    state.textContent = stateText;
+    toggle.setAttribute('aria-expanded', String(!isCollapsed));
+    toggle.setAttribute('aria-label', `${title?.textContent || ''} - ${stateText}`);
+  });
+}
+
+function initSemesterToggles() {
+  document.querySelectorAll('[data-semester-toggle]').forEach(toggle => {
+    if (toggle.dataset.semesterBound) return;
+    toggle.dataset.semesterBound = 'true';
+
+    toggle.addEventListener('click', () => {
+      const block = toggle.closest('[data-semester-block]');
+      if (!block) return;
+      block.classList.toggle('is-collapsed');
+      updateSemesterToggleLabels();
+    });
+  });
+  updateSemesterToggleLabels();
+}
 
 /* ===== HAMBURGER MENU ===== */
 const hamburger  = document.getElementById('hamburger');
@@ -527,6 +567,7 @@ function observeSkillCategories() {
 
 /* ===== INIT ===== */
 renderProjectCards();
+initSemesterToggles();
 observeFadeElements();
 observeSkillCategories();
 applyTranslations(currentLang);
@@ -602,10 +643,10 @@ const projectModals = {
     sae203: {
       tag: 'Projet 2.03',
       title: 'Mettre en place une solution informatique pour l’entreprise',
-      context: 'Ce projet consistait à créer en groupe une solution web pour gérer un Drive d\'entreprise. Le site devait permettre de consulter, insérer et manipuler des données stockées en base : catégories de produits, produits, clients, commandes et lignes de commande. L\'application devait proposer un CRUD pour chaque type de donnée, l\'import de nouveaux produits depuis un fichier, ainsi que la génération d\'une fiche commande avec la liste des produits et le coût total.',
-      learned: 'C\'est le projet qui représente le mieux mes compétences actuelles, parce qu\'il relie développement web, base de données, déploiement de services dans une machine virtuelle Linux et travail collaboratif. J\'ai aussi mieux compris comment organiser une application autour d\'un schéma de données, documenter une procédure de déploiement et travailler avec un dépôt GitHub commun.',
-      badges: ['Développement web', 'Base de données', 'CRUD', 'Import fichier', 'Linux VM', 'GitHub', 'Travail collaboratif'],
-      proof: 'Dépôt GitHub du projet : <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a> — Gantt et procédure de déploiement ci-dessous.',
+      context: 'Ce projet consistait à développer en groupe une application web Django simulant la gestion d\'un drive de supermarché. L\'application est organisée autour de cinq entités liées en base de données : catégories, produits, clients, commandes et lignes de commande. Elle propose un tableau de bord avec compteurs, un CRUD complet pour les données principales, une fiche client avec historique des commandes, et une page de détail commande où l\'on peut ajouter des produits, modifier les quantités, retirer des lignes et calculer automatiquement les totaux.',
+      learned: 'Ce projet m\'a fait travailler sur une vraie chaîne applicative : modèles Django reliés à un schéma SQL, vues et routes CRUD, templates HTML, interface d\'administration, API JSON et JavaScript vanilla pour l\'autocomplétion des produits. J\'ai aussi découvert les contraintes de déploiement avec une VM Linux, Apache, MariaDB, des scripts d\'installation et une configuration capable de basculer entre MariaDB en réseau et SQLite en local. C\'est pour ça que ce projet représente bien ma progression : il mélange développement, base de données, UX, tests et organisation d\'un dépôt commun.',
+      badges: ['Django', 'Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'API JSON', 'JavaScript', 'Autocomplete', 'Apache', 'Linux VM', 'Tests Django'],
+      proof: 'Dépôt GitHub du projet : <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a> — l\'application contient les modèles, vues, routes, templates, scripts de déploiement, tests Django, Gantt et procédure de déploiement ci-dessous.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {
@@ -683,10 +724,10 @@ const projectModals = {
     sae203: {
       tag: 'Project 2.03',
       title: 'Deploy an IT solution for a company',
-      context: 'This project was a group project focused on building a web solution for managing a company Drive. The website had to let users view, insert and manipulate data stored in a database: product categories, products, customers, orders and order lines. The application required CRUD features for each data type, product import from a file, and order sheet generation with product lists and total cost.',
-      learned: 'This is the project that best represents my current skills because it connects web development, databases, service deployment inside a Linux virtual machine and teamwork. I also got a clearer view of how to structure an application around a data schema, document a deployment procedure and work from a shared GitHub repository.',
-      badges: ['Web development', 'Database', 'CRUD', 'File import', 'Linux VM', 'GitHub', 'Teamwork'],
-      proof: 'Project GitHub repository: <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a> — project Gantt and deployment procedure below.',
+      context: 'This group project consisted of building a Django web application that simulates supermarket Drive management. The application is structured around five linked database entities: categories, products, customers, orders and order lines. It includes a dashboard with counters, full CRUD for the main data, a customer detail page with order history, and an order detail page where products can be added, quantities edited, lines removed and totals calculated automatically.',
+      learned: 'This project made me work across a full application chain: Django models connected to a SQL schema, CRUD views and routes, HTML templates, Django admin, a JSON API and vanilla JavaScript for product autocomplete. I also discovered deployment constraints with a Linux VM, Apache, MariaDB, installation scripts and a configuration that switches between MariaDB on the network and local SQLite. That is why this project represents my progress well: it combines development, databases, UX, tests and shared repository organisation.',
+      badges: ['Django', 'Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'JSON API', 'JavaScript', 'Autocomplete', 'Apache', 'Linux VM', 'Django tests'],
+      proof: 'Project GitHub repository: <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a> — the application includes models, views, routes, templates, deployment scripts, Django tests, the Gantt chart and deployment procedure below.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {

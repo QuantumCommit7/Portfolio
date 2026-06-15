@@ -265,7 +265,18 @@ img { display: block; max-width: 100%; }
   color: var(--clr-text-muted);
   max-width: 480px;
   line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.hero-evolution {
+  max-width: 520px;
+  color: var(--clr-text);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  padding-left: 1rem;
   margin-bottom: 2.5rem;
+  border-left: 3px solid var(--clr-orange);
+  background: linear-gradient(90deg, var(--clr-orange-dim), transparent);
 }
 
 .hero-cta {
@@ -351,14 +362,21 @@ img { display: block; max-width: 100%; }
   margin-bottom: 3rem;
 }
 
-.semester-label {
+.semester-toggle {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-family: var(--font-main);
+  background: transparent;
+  border: 0;
+  padding: 0;
   margin-bottom: 1.5rem;
+  cursor: pointer;
+  text-align: left;
 }
 
-.semester-label span {
+.semester-toggle span:first-child {
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -366,11 +384,78 @@ img { display: block; max-width: 100%; }
   color: var(--clr-text-muted);
 }
 
-.semester-label::after {
+.semester-toggle::after {
   content: '';
   flex: 1;
   height: 1px;
   background: var(--clr-border);
+  transition: background 0.2s;
+}
+
+.semester-toggle:hover span:first-child,
+.semester-toggle:focus-visible span:first-child {
+  color: var(--clr-orange);
+}
+
+.semester-toggle:hover::after,
+.semester-toggle:focus-visible::after {
+  background: var(--clr-orange-glow);
+}
+
+.semester-toggle:focus-visible {
+  outline: 2px solid var(--clr-orange);
+  outline-offset: 6px;
+  border-radius: var(--radius-sm);
+}
+
+.semester-toggle-state {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--clr-orange);
+  background: var(--clr-orange-dim);
+  border: 1px solid var(--clr-orange-glow);
+  border-radius: 100px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+.semester-toggle-icon {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  border: 1px solid var(--clr-border);
+  border-radius: 50%;
+  position: relative;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.semester-toggle-icon::before,
+.semester-toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  top: 50%;
+  height: 2px;
+  background: var(--clr-orange);
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.semester-toggle-icon::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.semester-toggle:hover .semester-toggle-icon,
+.semester-toggle:focus-visible .semester-toggle-icon {
+  border-color: var(--clr-orange);
+  background: var(--clr-orange-dim);
+}
+
+.semester-block:not(.is-collapsed) .semester-toggle-icon::after {
+  opacity: 0;
+  transform: translateY(-50%) rotate(0deg);
 }
 
 /* ===== PROJECTS GRID ===== */
@@ -378,6 +463,17 @@ img { display: block; max-width: 100%; }
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
+  overflow: visible;
+  max-height: 2400px;
+  opacity: 1;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+
+.semester-block.is-collapsed .projects-grid {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .project-card {
@@ -393,6 +489,7 @@ img { display: block; max-width: 100%; }
   transform: translateY(-5px);
   border-color: var(--clr-orange);
   box-shadow: 0 8px 32px rgba(255, 107, 53, 0.15);
+  z-index: 2;
 }
 
 .project-card.featured {

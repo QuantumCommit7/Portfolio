@@ -46,6 +46,10 @@
           Je suis passionné par les réseaux et les systèmes embarqués.
           J'aime comprendre comment les choses fonctionnent et les configurer moi-même.
         </p>
+        <p class="hero-evolution" data-i18n="hero.evolution">
+          Ce portfolio est en d&eacute;veloppement constant tout au long de ma carri&egrave;re en BUT.
+          Il &eacute;voluera au fur et &agrave; mesure de mes projets, comp&eacute;tences et exp&eacute;riences.
+        </p>
         <div class="hero-cta">
           <a href="#projets" class="btn btn-primary" data-i18n="hero.cta.projects">Voir mes projets</a>
           <a href="#contact" class="btn btn-outline" data-i18n="hero.cta.contact">Me contacter</a>
@@ -70,11 +74,13 @@
       </div>
 
       <!-- Semestre 1 -->
-      <div class="semester-block">
-        <div class="semester-label fade-in">
+      <div class="semester-block" data-semester-block>
+        <button class="semester-toggle fade-in" type="button" aria-expanded="true" aria-controls="projects-s1" data-semester-toggle>
           <span data-i18n="semester.s1">Semestre 1</span>
-        </div>
-        <div class="projects-grid" data-project-grid="s1">
+          <span class="semester-toggle-state" data-semester-state>Masquer les projets</span>
+          <span class="semester-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="projects-grid" id="projects-s1" data-project-grid="s1">
 
           <!-- Projet 1.01 -->
           <article class="project-card fade-in" data-project="sae101">
@@ -182,11 +188,13 @@
       </div>
 
       <!-- Semestre 2 -->
-      <div class="semester-block">
-        <div class="semester-label fade-in">
+      <div class="semester-block" data-semester-block>
+        <button class="semester-toggle fade-in" type="button" aria-expanded="true" aria-controls="projects-s2" data-semester-toggle>
           <span data-i18n="semester.s2">Semestre 2</span>
-        </div>
-        <div class="projects-grid" data-project-grid="s2">
+          <span class="semester-toggle-state" data-semester-state>Masquer les projets</span>
+          <span class="semester-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <div class="projects-grid" id="projects-s2" data-project-grid="s2">
 
           <!-- Projet 2.01 -->
           <article class="project-card fade-in" data-project="saegns3">
@@ -238,15 +246,15 @@
             </div>
             <h3 class="card-title" data-i18n="sae203.title">Mettre en place une solution informatique pour l’entreprise</h3>
             <p class="card-desc" data-i18n="sae203.desc">
-              Création en groupe d'un site web de gestion de Drive : base de données, CRUD catégories/produits/clients/commandes, import de produits par fichier et génération de fiches commande.
+              Application web Django de gestion de Drive : catalogue produits, clients, commandes, base SQL, API d'autocomplétion et déploiement sur environnement Linux.
             </p>
-            <p class="card-reflect" data-i18n="sae203.reflect">💡 C'est mon projet phare parce qu'il rassemble développement web, base de données, déploiement Linux et travail collaboratif dans une vraie application métier.</p>
+            <p class="card-reflect" data-i18n="sae203.reflect">💡 C'est mon projet phare parce qu'il relie développement web, base de données, UX, tests, déploiement Linux et travail collaboratif dans une vraie application métier.</p>
             <div class="card-tags">
-              <span class="badge badge-orange">Développement web</span>
-              <span class="badge badge-blue">Base de données</span>
+              <span class="badge badge-orange">Django</span>
+              <span class="badge badge-blue">SQL</span>
               <span class="badge badge-green">CRUD</span>
-              <span class="badge badge-purple">Linux</span>
-              <span class="badge badge-red">GitHub</span>
+              <span class="badge badge-purple">API</span>
+              <span class="badge badge-red">Linux</span>
             </div>
             <button class="card-detail-btn" type="button" data-i18n="modal.btn.detail">Détails →</button>
           </article>
