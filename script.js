@@ -1,6 +1,6 @@
 /* =============================================
-   PORTFOLIO — Nathan Schneider Fetique
-   Vanilla JS: i18n, navbar, scroll animations
+   PORTFOLIO - Nathan Schneider Fetique
+   Vanilla JS - i18n, navbar, scroll animations
    ============================================= */
 
 /* ===== TRANSLATIONS ===== */
@@ -15,7 +15,7 @@ const translations = {
 
     'hero.greeting': 'Bonjour, je suis',
     'hero.title':    'Étudiant BUT Réseaux & Télécommunications',
-    'hero.school':   'IUT de Colmar — 1ère année',
+    'hero.school':   'IUT de Colmar - 1ère année',
     'hero.tagline':  'Je suis passionné par les réseaux et les systèmes embarqués. J\'aime comprendre comment les choses fonctionnent et les configurer moi-même.',
     'hero.evolution': 'Ce portfolio est en d\u00e9veloppement constant tout au long de ma carri\u00e8re en BUT. Il \u00e9voluera au fur et \u00e0 mesure de mes projets, comp\u00e9tences et exp\u00e9riences.',
     'hero.cta.projects': 'Voir mes projets',
@@ -68,16 +68,16 @@ const translations = {
     'sae102.desc':  'Simulation de l\'infrastructure réseau d\'une succursale d\'entreprise sous EVE-NG. J\'ai configuré 4 VLANs, calculé un plan d\'adressage VLSM, mis en place le routage inter-VLAN et déployé un serveur DHCP Linux.',
 
     'sae103.title': 'Découvrir un dispositif de transmission',
-    'sae103.desc':  'Campagne de mesures WiFi sur plusieurs zones du campus : bâtiment C, bibliothèque universitaire et comparaison de réseaux 802.11a 5 GHz / 802.11g 2.4 GHz.',
+    'sae103.desc':  'Campagne de mesures WiFi menée sur plusieurs zones du campus, dont le bâtiment C et la bibliothèque universitaire, avec une comparaison des réseaux 802.11a en 5 GHz et 802.11g en 2.4 GHz.',
 
     'sae202.title': 'Web Radio ESP32',
     'sae202.desc':  'Conception progressive d\'une radio internet avec un ESP32 HUZZAH32 et un décodeur VS1053. Contrôle volume, tonalité et spatialisation, gestion WiFi via WiFiManager et pilotage à distance par MQTT depuis Android.',
 
     'sae203.title': 'Mettre en place une solution informatique pour l’entreprise',
-    'sae203.desc':  'Application web Django de gestion de Drive : catalogue produits, clients, commandes, base SQL, API d\'autocomplétion et déploiement sur environnement Linux.',
+    'sae203.desc':  'Application web Django de gestion de Drive avec catalogue produits, clients, commandes, base SQL, API d\'autocomplétion et déploiement sur environnement Linux.',
 
     'saegns3.title': 'Construire un réseau',
-    'saegns3.desc':  'Déploiement complet d\'une infrastructure réseau sous GNS3 : 3 VLANs, routage inter-VLAN, adressage VLSM, RIPv2, serveurs FTP et Web, sécurisation par ACL et port-security.',
+    'saegns3.desc':  'Déploiement complet d\'une infrastructure réseau sous GNS3 avec 3 VLANs, routage inter-VLAN, adressage VLSM, RIPv2, serveurs FTP et Web, sécurisation par ACL et port-security.',
 
     'project.final.tag': 'Projet 2.04',
     'project.final.title': 'Projet final',
@@ -89,40 +89,44 @@ const translations = {
     'sae103.reflect':  '💡 Ce projet m\'a appris à analyser concrètement une couverture WiFi et à relier les mesures terrain avec la position des points d\'accès, la fréquence utilisée et l\'architecture du bâtiment.',
     'sae202.reflect':  '💡 Ce projet était surtout très technique. Lire les datasheets du VS1053 pour implémenter la spatialisation à la main et faire communiquer un téléphone Android avec l\'ESP32 via MQTT c\'était une vraie satisfaction.',
     'sae203.reflect':  '💡 C\'est mon projet phare parce qu\'il relie développement web, base de données, UX, tests, déploiement Linux et travail collaboratif dans une vraie application métier.',
-    'saegns3.reflect': '💡 C\'est le projet où j\'ai tout mis ensemble en même temps : VLANs, routage, services réseau et sécurité. Voir la topologie complète fonctionner dans GNS3 c\'était vraiment gratifiant.',
+    'saegns3.reflect': '💡 C\'est le projet où j\'ai tout mis ensemble en même temps, avec les VLANs, le routage, les services réseau et la sécurité. Voir la topologie complète fonctionner dans GNS3 c\'était vraiment gratifiant.',
 
-    'skill.proof.network':     'Prouvé par : Projet 1.02, Projet 1.03, Infrastructure GNS3',
-    'skill.proof.systems':     'Prouvé par : Projet 1.01, Samba Lab',
-    'skill.proof.programming': 'Prouvé par : Projet 2.02 (Web Radio ESP32), Projet 2.03',
-    'skill.proof.tools':       'Prouvé par : Infrastructure GNS3, Projet 2.02, Projet 2.03',
+    'skill.proof.network':     'Preuve apportée par les projets 1.02, 1.03 et l\'infrastructure GNS3',
+    'skill.proof.systems':     'Preuve apportée par le projet 1.01 et le laboratoire Samba',
+    'skill.proof.programming': 'Preuve apportée par le projet 2.02 Web Radio ESP32 et le projet 2.03',
+    'skill.proof.tools':       'Preuve apportée par l\'infrastructure GNS3, le projet 2.02 et le projet 2.03',
 
     'skills.tag':      'Expertise',
     'skills.title':    'Compétences',
     'skills.subtitle': 'Compétences du tronc commun, adaptées au niveau BUT 1',
     'skills.coef.note': 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
     'skills.detail.btn': 'Détail compétence',
+    'skills.projects.btn': 'Voir les projets associés',
     'skills.semester1': 'Semestre 1',
     'skills.semester2': 'Semestre 2',
 
-    'skills.ue21':     'C1 — Administrer',
+    'skills.ue21':     'C1 - Administrer',
     'skills.ue21.sub': 'Administrer les réseaux et l\'Internet',
     'skills.ue21.ac1': 'Configurer les fonctions de base d\'un réseau local.',
     'skills.ue21.ac2': 'Comprendre les systèmes numériques, le codage de l\'information et les bases d\'Internet.',
     'skills.ue21.ac3': 'Identifier les dysfonctionnements d\'un réseau local et savoir les signaler.',
-    'skills.ue22':     'C2 — Connecter',
+    'skills.ue21.projects': 'Projets associés à cette compétence 1.01, 1.02 et 2.01',
+    'skills.ue22':     'C2 - Connecter',
     'skills.ue22.sub': 'Connecter les entreprises et les usagers',
     'skills.ue22.ac1': 'Mesurer, analyser et commenter des signaux.',
     'skills.ue22.ac2': 'Caractériser des systèmes de transmission élémentaires.',
     'skills.ue22.ac3': 'Adapter son discours à un interlocuteur technique ou non technique.',
-    'skills.ue23':     'C3 — Programmer',
+    'skills.ue22.projects': 'Projets associés à cette compétence 1.03 et 2.02',
+    'skills.ue23':     'C3 - Programmer',
     'skills.ue23.sub': 'Créer des outils et applications pour les R&T',
     'skills.ue23.ac1': 'Lire, exécuter, corriger et modifier un programme.',
     'skills.ue23.ac2': 'Connaître l\'architecture et les technologies d\'un site Web.',
     'skills.ue23.ac3': 'Choisir des mécanismes de gestion de données adaptés.',
+    'skills.ue23.projects': 'Projets associés à cette compétence 1.04, 1.05 et 2.03',
 
-    'skill.proof.ue21': 'Niveau BUT 1 : assister l\'administrateur réseau',
-    'skill.proof.ue22': 'Niveau BUT 1 : découvrir les transmissions et la ToIP',
-    'skill.proof.ue23': 'Niveau BUT 1 : s\'intégrer dans un service informatique',
+    'skill.proof.ue21': 'Niveau BUT 1 pour assister l\'administrateur réseau',
+    'skill.proof.ue22': 'Niveau BUT 1 pour découvrir les transmissions et la ToIP',
+    'skill.proof.ue23': 'Niveau BUT 1 pour s\'intégrer dans un service informatique',
 
     'tools.tag': 'Stack technique',
     'tools.title': 'Outils & environnements',
@@ -148,10 +152,21 @@ const translations = {
     'modal.label.english': 'Résumé anglais',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Preuves & Documents',
+    'modal.label.competences': 'Compétences attestées',
     'modal.skill.label.context': 'Niveau',
     'modal.skill.label.learned': 'Acquis ciblés',
     'modal.skill.label.tech': 'Domaines',
     'modal.skill.label.proof': 'Détail par semestre',
+
+    'project.evidence.title': 'Compétences attestées',
+    'evidence.sae101.c1': 'Compréhension des risques cyber, identification des comportements à risque et vulgarisation de mesures de protection.',
+    'evidence.sae102.c1': 'Configuration de VLAN, adressage VLSM, routage inter-VLAN, DHCP Linux et analyse Wireshark.',
+    'evidence.sae103.c2': 'Mesures WiFi terrain, comparaison 2.4 GHz / 5 GHz et analyse de couverture radio.',
+    'evidence.sae104.c3': 'Création d\'un site HTML/CSS multi-pages, structuré, responsive et maintenable.',
+    'evidence.sae105.c3': 'Développement d\'un outil Python/PowerShell avec échange JSON, interface PyQt5 et traitement de fichiers.',
+    'evidence.saegns3.c1': 'Construction d\'une infrastructure complète avec VLAN, routage, services réseau, ACL et port-security.',
+    'evidence.sae202.c2': 'Caractérisation d\'un système communicant avec ESP32, flux audio, WiFi, registres du VS1053 et pilotage MQTT.',
+    'evidence.sae203.c3': 'Modélisation SQL, développement Django, débogage Python, API et tests dans une application métier.',
 
     'contact.tag':    'Restons en contact',
     'contact.title':  'Me contacter',
@@ -160,7 +175,7 @@ const translations = {
     'contact.github.handle':   '@QuantumCommit7',
     'contact.note':   'Hésitez pas à me contacter si vous avez une opportunité de stage ou envie de collaborer sur un projet.',
 
-    'footer.text': '© 2026 Nathan Schneider Fetique — BUT Réseaux & Télécommunications, IUT de Colmar',
+    'footer.text': '© 2026 Nathan Schneider Fetique - BUT Réseaux & Télécommunications, IUT de Colmar',
   },
 
   en: {
@@ -173,7 +188,7 @@ const translations = {
 
     'hero.greeting': 'Hi, I\'m',
     'hero.title':    'Networks & Telecommunications Student',
-    'hero.school':   'IUT de Colmar — 1st year',
+    'hero.school':   'IUT de Colmar - 1st year',
     'hero.tagline':  'I\'m passionate about networking and embedded systems. I like to understand how things work and set them up myself.',
     'hero.evolution': 'This portfolio is under constant development throughout my BUT studies. It will keep improving as I add new projects, skills and experiences.',
     'hero.cta.projects': 'View my projects',
@@ -226,16 +241,16 @@ const translations = {
     'sae102.desc':  'Simulated an enterprise branch network in EVE-NG. I configured 4 VLANs, calculated a VLSM addressing plan, set up inter-VLAN routing and deployed a Linux DHCP server.',
 
     'sae103.title': 'Discovering a transmission system',
-    'sae103.desc':  'WiFi measurement campaign across several campus areas: building C, the university library and comparison of 802.11a 5 GHz / 802.11g 2.4 GHz networks.',
+    'sae103.desc':  'WiFi measurement campaign across several campus areas, including building C and the university library, with a comparison of 802.11a 5 GHz and 802.11g 2.4 GHz networks.',
 
     'sae202.title': 'ESP32 Web Radio',
     'sae202.desc':  'Progressive build of an internet radio with an ESP32 HUZZAH32 and VS1053 decoder. Volume, tone and spatialisation controls, WiFi management via WiFiManager and remote control over MQTT from Android.',
 
     'sae203.title': 'Deploy an IT solution for a company',
-    'sae203.desc':  'Django web application for Drive management: product catalogue, customers, orders, SQL database, autocomplete API and deployment on a Linux environment.',
+    'sae203.desc':  'Django web application for Drive management with product catalogue, customers, orders, SQL database, autocomplete API and deployment on a Linux environment.',
 
     'saegns3.title': 'Build a network',
-    'saegns3.desc':  'Full enterprise network deployment in GNS3: 3 VLANs, inter-VLAN routing, VLSM addressing, RIPv2, FTP and Web servers, ACL and port-security hardening.',
+    'saegns3.desc':  'Full enterprise network deployment in GNS3 with 3 VLANs, inter-VLAN routing, VLSM addressing, RIPv2, FTP and Web servers, ACL and port-security hardening.',
 
     'project.final.tag': 'Project 2.04',
     'project.final.title': 'Final project',
@@ -247,40 +262,44 @@ const translations = {
     'sae103.reflect':  '💡 This project taught me how to analyse WiFi coverage in the field and connect measurements with access point placement, frequency bands and building layout.',
     'sae202.reflect':  '💡 This project was mainly very technical. Reading the VS1053 datasheet to implement spatialisation by hand and getting an Android phone talking to the ESP32 over MQTT was really satisfying.',
     'sae203.reflect':  '💡 This is my featured project because it connects web development, databases, UX, tests, Linux deployment and teamwork in a real business-style application.',
-    'saegns3.reflect': '💡 This is the project where I put everything together at once: VLANs, routing, network services and security. Getting the full topology working in GNS3 was really rewarding.',
+    'saegns3.reflect': '💡 This is the project where I put everything together at once, including VLANs, routing, network services and security. Getting the full topology working in GNS3 was really rewarding.',
 
-    'skill.proof.network':     'Proven by: Project 1.02, Project 1.03, GNS3 Infrastructure',
-    'skill.proof.systems':     'Proven by: Project 1.01, Samba Lab',
-    'skill.proof.programming': 'Proven by: Project 2.02 (ESP32 Web Radio), Project 2.03',
-    'skill.proof.tools':       'Proven by: GNS3 Infrastructure, Project 2.02, Project 2.03',
+    'skill.proof.network':     'Proven through Project 1.02, Project 1.03 and the GNS3 infrastructure',
+    'skill.proof.systems':     'Proven through Project 1.01 and the Samba lab',
+    'skill.proof.programming': 'Proven through Project 2.02 ESP32 Web Radio and Project 2.03',
+    'skill.proof.tools':       'Proven through the GNS3 infrastructure, Project 2.02 and Project 2.03',
 
     'skills.tag':      'Expertise',
     'skills.title':    'Skills',
     'skills.subtitle': 'Core curriculum competences, adapted to my first-year BUT level',
     'skills.coef.note': 'The displayed coefficients correspond to this academic year and may change from one year to another.',
     'skills.detail.btn': 'Skill details',
+    'skills.projects.btn': 'View related projects',
     'skills.semester1': 'Semester 1',
     'skills.semester2': 'Semester 2',
 
-    'skills.ue21':     'C1 — Administer',
+    'skills.ue21':     'C1 - Administer',
     'skills.ue21.sub': 'Administer networks and the Internet',
     'skills.ue21.ac1': 'Configure the basic functions of a local network.',
     'skills.ue21.ac2': 'Understand digital systems, information coding and the foundations of the Internet.',
     'skills.ue21.ac3': 'Identify local network malfunctions and know how to report them.',
-    'skills.ue22':     'C2 — Connect',
+    'skills.ue21.projects': 'Related projects 1.01, 1.02 and 2.01',
+    'skills.ue22':     'C2 - Connect',
     'skills.ue22.sub': 'Connect businesses and users',
     'skills.ue22.ac1': 'Measure, analyse and comment on signals.',
     'skills.ue22.ac2': 'Characterise elementary transmission systems.',
     'skills.ue22.ac3': 'Adapt my communication to technical and non-technical audiences.',
-    'skills.ue23':     'C3 — Program',
+    'skills.ue22.projects': 'Related projects 1.03 and 2.02',
+    'skills.ue23':     'C3 - Program',
     'skills.ue23.sub': 'Create tools and applications for RT',
     'skills.ue23.ac1': 'Read, run, correct and modify a program.',
     'skills.ue23.ac2': 'Understand the architecture and technologies of a website.',
     'skills.ue23.ac3': 'Choose suitable data management mechanisms.',
+    'skills.ue23.projects': 'Related projects 1.04, 1.05 and 2.03',
 
-    'skill.proof.ue21': 'BUT 1 level: assisting the network administrator',
-    'skill.proof.ue22': 'BUT 1 level: discovering transmissions and ToIP',
-    'skill.proof.ue23': 'BUT 1 level: joining an IT service environment',
+    'skill.proof.ue21': 'BUT 1 level for assisting the network administrator',
+    'skill.proof.ue22': 'BUT 1 level for discovering transmissions and ToIP',
+    'skill.proof.ue23': 'BUT 1 level for joining an IT service environment',
 
     'tools.tag': 'Technical stack',
     'tools.title': 'Tools & environments',
@@ -306,10 +325,21 @@ const translations = {
     'modal.label.english': 'English summary',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Proof & Documents',
+    'modal.label.competences': 'Skills evidenced',
     'modal.skill.label.context': 'Level',
     'modal.skill.label.learned': 'Targeted outcomes',
     'modal.skill.label.tech': 'Areas',
     'modal.skill.label.proof': 'Details by semester',
+
+    'project.evidence.title': 'Skills evidenced',
+    'evidence.sae101.c1': 'Understanding cyber risks, identifying risky behaviour and explaining protection measures clearly.',
+    'evidence.sae102.c1': 'Configuring VLANs, VLSM addressing, inter-VLAN routing, Linux DHCP and Wireshark analysis.',
+    'evidence.sae103.c2': 'Field WiFi measurements, 2.4 GHz / 5 GHz comparison and radio coverage analysis.',
+    'evidence.sae104.c3': 'Building a structured, responsive and maintainable multi-page HTML/CSS website.',
+    'evidence.sae105.c3': 'Developing a Python/PowerShell tool with JSON exchange, PyQt5 UI and file processing.',
+    'evidence.saegns3.c1': 'Building a full infrastructure with VLANs, routing, network services, ACLs and port-security.',
+    'evidence.sae202.c2': 'Characterising a communicating system with ESP32, audio streams, WiFi, VS1053 registers and MQTT control.',
+    'evidence.sae203.c3': 'SQL modelling, Django development, Python debugging, API work and tests in a business application.',
 
     'contact.tag':    'Let\'s connect',
     'contact.title':  'Get in touch',
@@ -318,7 +348,7 @@ const translations = {
     'contact.github.handle':   '@QuantumCommit7',
     'contact.note':   'Feel free to reach out if you have an internship opportunity or just want to collaborate on something.',
 
-    'footer.text': '© 2026 Nathan Schneider Fetique — Networks & Telecommunications, IUT de Colmar',
+    'footer.text': '© 2026 Nathan Schneider Fetique - Networks & Telecommunications, IUT de Colmar',
   }
 };
 
@@ -332,6 +362,7 @@ const projectCardGroups = {
       titleKey: 'sae101.title',
       descKey: 'sae101.desc',
       reflectKey: 'sae101.reflect',
+      competences: [{ key: 'c1', evidenceKey: 'evidence.sae101.c1' }],
       badges: [
         { label: 'Cybersécurité', color: 'red' },
         { label: 'Cheval de Troie', color: 'orange' },
@@ -345,6 +376,7 @@ const projectCardGroups = {
       titleKey: 'sae102.title',
       descKey: 'sae102.desc',
       reflectKey: 'sae102.reflect',
+      competences: [{ key: 'c1', evidenceKey: 'evidence.sae102.c1' }],
       badges: [
         { label: 'EVE-NG', color: 'green' },
         { label: 'VLAN 802.1Q', color: 'orange' },
@@ -360,6 +392,7 @@ const projectCardGroups = {
       titleKey: 'sae103.title',
       descKey: 'sae103.desc',
       reflectKey: 'sae103.reflect',
+      competences: [{ key: 'c2', evidenceKey: 'evidence.sae103.c2' }],
       badges: [
         { label: 'WiFi', color: 'blue' },
         { label: '802.11', color: 'orange' },
@@ -375,6 +408,7 @@ const projectCardGroups = {
       titleKey: 'sae104.title',
       descKey: 'sae104.desc',
       reflectKey: 'sae104.reflect',
+      competences: [{ key: 'c3', evidenceKey: 'evidence.sae104.c3' }],
       badges: [
         { label: 'HTML5', color: 'orange' },
         { label: 'CSS3', color: 'blue' },
@@ -389,6 +423,7 @@ const projectCardGroups = {
       titleKey: 'sae105.title',
       descKey: 'sae105.desc',
       reflectKey: 'sae105.reflect',
+      competences: [{ key: 'c3', evidenceKey: 'evidence.sae105.c3' }],
       badges: [
         { label: 'Python', color: 'blue' },
         { label: 'PyQt5', color: 'purple' },
@@ -405,6 +440,7 @@ const projectCardGroups = {
       titleKey: 'saegns3.title',
       descKey: 'saegns3.desc',
       reflectKey: 'saegns3.reflect',
+      competences: [{ key: 'c1', evidenceKey: 'evidence.saegns3.c1' }],
       badges: [
         { label: 'GNS3', color: 'green' },
         { label: 'Cisco IOS', color: 'blue' },
@@ -420,6 +456,7 @@ const projectCardGroups = {
       titleKey: 'sae202.title',
       descKey: 'sae202.desc',
       reflectKey: 'sae202.reflect',
+      competences: [{ key: 'c2', evidenceKey: 'evidence.sae202.c2' }],
       badges: [
         { label: 'ESP32 HUZZAH32', color: 'orange' },
         { label: 'VS1053', color: 'red' },
@@ -436,6 +473,7 @@ const projectCardGroups = {
       descKey: 'sae203.desc',
       reflectKey: 'sae203.reflect',
       featured: true,
+      competences: [{ key: 'c3', evidenceKey: 'evidence.sae203.c3' }],
       badges: [
         { label: 'Django', color: 'orange' },
         { label: 'SQL', color: 'blue' },
@@ -456,6 +494,12 @@ const projectCardGroups = {
       noDetail: true,
     },
   ],
+};
+
+const skillProjectMap = {
+  c1: ['sae101', 'sae102', 'saegns3'],
+  c2: ['sae103', 'sae202'],
+  c3: ['sae104', 'sae105', 'sae203'],
 };
 
 const htmlEntities = {
@@ -492,21 +536,44 @@ function getBaseText(key) {
   return translations.fr[key] || '';
 }
 
+function renderProjectEvidence(project) {
+  const competences = project.competences || [];
+  if (!competences.length) return '';
+
+  const items = competences.map(item => `
+        <li>
+          <span class="project-skill-code">${escapeHTML(item.key.toUpperCase())}</span>
+          <span data-i18n="${escapeHTML(item.evidenceKey)}">${getBaseText(item.evidenceKey)}</span>
+        </li>
+      `).join('');
+
+  return `
+      <div class="project-evidence">
+        <h4 data-i18n="project.evidence.title">${getBaseText('project.evidence.title')}</h4>
+        <ul>${items}</ul>
+      </div>`;
+}
+
 function renderProjectCard(project) {
   const featuredClass = project.featured ? ' featured' : '';
   const statusClass = project.featured ? ' card-status--featured' : '';
   const tag = project.tagKey ? getBaseText(project.tagKey) : project.tag;
+  const competences = project.competences || [];
+  const competenceAttr = competences.length
+    ? ` data-competences="${escapeHTML(competences.map(item => item.key).join(' '))}"`
+    : '';
   const badges = (project.badges || [])
     .map(badge => `<span class="badge badge-${badge.color}">${escapeHTML(badge.label)}</span>`)
     .join('');
   const reflect = project.reflectKey
     ? `<p class="card-reflect" data-i18n="${escapeHTML(project.reflectKey)}">${getBaseText(project.reflectKey)}</p>`
     : '';
+  const evidence = renderProjectEvidence(project);
   const tags = badges ? `<div class="card-tags">${badges}</div>` : '';
   const detailButton = project.noDetail ? '' : `<button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog" aria-label="Voir les détails du projet ${escapeHTML(tag)}">${getBaseText('modal.btn.detail')}</button>`;
 
   return `
-    <article class="project-card fade-in${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}>
+    <article class="project-card fade-in${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}${competenceAttr}>
       <div class="card-header">
         <span class="card-tag"${project.tagKey ? ` data-i18n="${escapeHTML(project.tagKey)}"` : ''}>${escapeHTML(tag)}</span>
         <div class="card-status${statusClass}" data-i18n="${escapeHTML(project.statusKey)}">${getBaseText(project.statusKey)}</div>
@@ -514,6 +581,7 @@ function renderProjectCard(project) {
       <h3 class="card-title" data-i18n="${escapeHTML(project.titleKey)}">${getBaseText(project.titleKey)}</h3>
       <p class="card-desc" data-i18n="${escapeHTML(project.descKey)}">${getBaseText(project.descKey)}</p>
       ${reflect}
+      ${evidence}
       ${tags}
       ${detailButton}
     </article>`;
@@ -537,6 +605,51 @@ function bindSkillDetailButtons() {
       e.stopPropagation();
       openModal(btn.dataset.skillModal, btn);
     });
+  });
+}
+
+function getProjectConfig(projectKey) {
+  return Object.values(projectCardGroups)
+    .flat()
+    .find(project => project.key === projectKey);
+}
+
+function showSkillProjects(skillKey) {
+  const projectKeys = skillProjectMap[skillKey] || [];
+
+  document.querySelectorAll('[data-semester-block]').forEach(block => {
+    block.classList.remove('is-collapsed');
+  });
+  updateSemesterToggleLabels();
+
+  document.querySelectorAll('.project-card').forEach(card => {
+    const projectKey = card.dataset.project;
+    const isMatch = Boolean(projectKey) && projectKeys.includes(projectKey);
+    card.classList.toggle('is-skill-match', isMatch);
+    card.classList.toggle('is-skill-dimmed', projectKeys.length > 0 && !isMatch);
+  });
+
+  const projectsSection = document.getElementById('projets');
+  projectsSection?.scrollIntoView({
+    behavior: shouldReduceMotion() ? 'auto' : 'smooth',
+    block: 'start',
+  });
+
+  const firstMatch = projectKeys
+    .map(projectKey => document.querySelector(`[data-project="${projectKey}"]`))
+    .find(Boolean);
+
+  if (firstMatch) {
+    firstMatch.setAttribute('tabindex', '-1');
+    window.setTimeout(() => firstMatch.focus({ preventScroll: true }), shouldReduceMotion() ? 0 : 350);
+  }
+}
+
+function bindSkillProjectButtons() {
+  document.querySelectorAll('[data-skill-projects]').forEach(btn => {
+    if (btn.dataset.skillProjectsBound) return;
+    btn.dataset.skillProjectsBound = 'true';
+    btn.addEventListener('click', () => showSkillProjects(btn.dataset.skillProjects));
   });
 }
 
@@ -708,6 +821,7 @@ function observeSkillCategories() {
 /* ===== INIT ===== */
 renderProjectCards();
 bindSkillDetailButtons();
+bindSkillProjectButtons();
 initSemesterToggles();
 observeFadeElements();
 observeSkillCategories();
@@ -732,7 +846,7 @@ const projectModals = {
     sae105: {
       tag: 'Projet 1.05',
       title: 'Traiter des données',
-      context: 'On devait développer un outil de reporting pour localiser et supprimer les gros fichiers d\'un disque. J\'ai fait un script PowerShell orchestrateur qui enchaîne 3 scripts Python : le premier pour choisir le répertoire via une interface graphique PyQt5, le deuxième pour analyser l\'arborescence avec pathlib et exporter les résultats en JSON, et le troisième pour afficher un camembert interactif avec des cases à cocher pour sélectionner les fichiers à supprimer. La suppression se fait via un script PowerShell généré avec double confirmation.',
+      context: 'On devait développer un outil de reporting pour localiser et supprimer les gros fichiers d\'un disque. J\'ai fait un script PowerShell orchestrateur qui enchaîne 3 scripts Python. Le premier sert à choisir le répertoire avec une interface PyQt5, le deuxième analyse l\'arborescence avec pathlib et exporte les résultats en JSON, puis le troisième affiche un camembert interactif avec des cases à cocher pour sélectionner les fichiers à supprimer. La suppression se fait via un script PowerShell généré avec double confirmation.',
       learned: 'J\'ai appris à structurer un projet en plusieurs scripts qui communiquent entre eux. Utiliser pathlib pour parcourir des arborescences et trier par taille c\'était nouveau pour moi. L\'interface graphique avec PyQt5 et les graphiques PyQtChart c\'était aussi une vraie découverte.',
       badges: ['Python', 'PyQt5', 'PyQtChart', 'PowerShell', 'pathlib', 'JSON', 'Windows'],
       proof: 'Sujet du projet disponible ci-dessous.',
@@ -759,8 +873,8 @@ const projectModals = {
     sae103: {
       tag: 'Projet 1.03',
       title: 'Découvrir un dispositif de transmission',
-      context: 'Ce projet portait sur l\'analyse d\'une couverture WiFi réelle. Nous avons mesuré le réseau UHA au 1er étage et au rez-de-chaussée du bâtiment C, puis dans la bibliothèque universitaire. Les mesures ont permis d\'identifier les zones de bonne couverture proches des points d\'accès, les zones moyennes encore utilisables et les zones faibles ou inexistantes, notamment dans les halls et certaines parties plus éloignées des bornes. Nous avons aussi comparé deux réseaux de test : GrA_802.11a en 5 GHz, avec une portée très limitée autour de la borne, et GrA_802.11g en 2.4 GHz, mieux reçu dans la salle et les salles voisines.',
-      learned: 'J\'ai appris à interpréter une carte de couverture radio, à relier la puissance du signal à la position des points d\'accès et à comprendre l\'impact concret de la fréquence utilisée. La comparaison 2.4 GHz / 5 GHz m\'a surtout montré que le débit théorique ne suffit pas : la portée, les obstacles et l\'architecture du bâtiment changent fortement le résultat.',
+      context: 'Ce projet portait sur l\'analyse d\'une couverture WiFi réelle. Nous avons mesuré le réseau UHA au 1er étage et au rez-de-chaussée du bâtiment C, puis dans la bibliothèque universitaire. Les mesures ont permis d\'identifier les zones de bonne couverture proches des points d\'accès, les zones moyennes encore utilisables et les zones faibles ou inexistantes, notamment dans les halls et certaines parties plus éloignées des bornes. Nous avons aussi comparé deux réseaux de test. GrA_802.11a en 5 GHz avait une portée très limitée autour de la borne, tandis que GrA_802.11g en 2.4 GHz était mieux reçu dans la salle et les salles voisines.',
+      learned: 'J\'ai appris à interpréter une carte de couverture radio, à relier la puissance du signal à la position des points d\'accès et à comprendre l\'impact concret de la fréquence utilisée. La comparaison entre 2.4 GHz et 5 GHz m\'a surtout montré que le débit théorique ne suffit pas, car la portée, les obstacles et l\'architecture du bâtiment changent fortement le résultat.',
       badges: ['WiFi', '802.11a', '802.11g', '2.4 GHz', '5 GHz', 'Couverture radio', 'Mesures terrain'],
       proof: 'Sujet du projet et captures de couverture disponibles ci-dessous.',
       images: [
@@ -778,18 +892,18 @@ const projectModals = {
       context: 'Projet progressif en 10 parties pour concevoir une radio internet complète. En partant d\'un exemple basique, j\'ai ajouté le contrôle du volume, de la tonalité et de la spatialisation depuis le clavier (registres SPI du VS1053), puis la gestion WiFi dynamique via WiFiManager, puis la lecture de flux avec la librairie ESP32_VS1053_Stream. La partie finale utilise le protocole MQTT et l\'app Android IoT MQTT Panel pour tout contrôler à distance depuis un téléphone.',
       learned: 'Ce projet m\'a surtout marqué par sa partie technique bas niveau. Lire les datasheets du VS1053 pour comprendre les registres SPI et implémenter la spatialisation à la main c\'était vraiment formateur. Apprendre MQTT et faire communiquer un téléphone Android avec l\'ESP32 en temps réel m\'a ouvert sur l\'IoT de façon concrète.',
       badges: ['ESP32 HUZZAH32', 'VS1053', 'Arduino C', 'WiFiManager', 'ESP32_VS1053_Stream', 'MQTT', 'PubSubClient', 'IoT MQTT Panel', 'SPI'],
-      proof: 'Code source sur <a href="https://github.com/QuantumCommit7/Radio_ESP32" target="_blank" rel="noopener" class="modal-proof-link">github.com/QuantumCommit7/Radio_ESP32</a> — sujet du projet ci-dessous.',
+      proof: 'Code source sur <a href="https://github.com/QuantumCommit7/Radio_ESP32" target="_blank" rel="noopener" class="modal-proof-link">github.com/QuantumCommit7/Radio_ESP32</a> - sujet du projet ci-dessous.',
       images: ['Doc/SAE%202.02/SAE202-Web_Radio-1.pdf'],
     },
     sae203: {
       tag: 'Projet 2.03',
       title: 'Mettre en place une solution informatique pour l’entreprise',
-      context: 'Ce projet consistait à développer en groupe une application web Django simulant la gestion d\'un drive de supermarché. L\'application est organisée autour de cinq entités liées en base de données : catégories, produits, clients, commandes et lignes de commande. Elle propose un tableau de bord avec compteurs, un CRUD complet pour les données principales, une fiche client avec historique des commandes, et une page de détail commande où l\'on peut ajouter des produits, modifier les quantités, retirer des lignes et calculer automatiquement les totaux.',
-      tasks: 'Personnellement, je me suis occupé de la base SQL du projet : définition des tables, relations entre catégories, produits, clients, commandes et lignes de commande, clés étrangères et données de test. J\'ai aussi participé au débogage Python côté Django, notamment pour vérifier que les vues, les routes, les calculs de commande et l\'accès aux données fonctionnaient correctement.',
-      learned: 'Ce projet m\'a fait progresser sur la modélisation d\'une base de données relationnelle et sur le lien entre SQL et Django. Le débogage Python m\'a aussi appris à lire les erreurs, remonter à leur cause, vérifier les échanges entre modèles, vues et templates, puis tester les corrections dans une application complète. C\'est pour ça que ce projet représente bien ma progression : il mélange base de données, développement web, débogage, tests et organisation d\'un dépôt commun.',
+      context: 'Ce projet consistait à développer en groupe une application web Django simulant la gestion d\'un drive de supermarché. L\'application s\'organise autour de cinq entités liées en base de données, les catégories, les produits, les clients, les commandes et les lignes de commande. Elle propose un tableau de bord avec compteurs, un CRUD complet pour les données principales, une fiche client avec historique des commandes, et une page de détail commande où l\'on peut ajouter des produits, modifier les quantités, retirer des lignes et calculer automatiquement les totaux.',
+      tasks: 'Personnellement, je me suis occupé de la base SQL du projet en définissant les tables, les relations entre catégories, produits, clients, commandes et lignes de commande, les clés étrangères et les données de test. J\'ai aussi participé au débogage Python côté Django, notamment pour vérifier que les vues, les routes, les calculs de commande et l\'accès aux données fonctionnaient correctement.',
+      learned: 'Ce projet m\'a fait progresser sur la modélisation d\'une base de données relationnelle et sur le lien entre SQL et Django. Le débogage Python m\'a aussi appris à lire les erreurs, remonter à leur cause, vérifier les échanges entre modèles, vues et templates, puis tester les corrections dans une application complète. Ce projet représente bien ma progression parce qu\'il réunit base de données, développement web, débogage, tests et organisation d\'un dépôt commun.',
       englishSummary: 'SAE 2.03 was a group project focused on building a Django web application for supermarket Drive management. My personal contribution was mainly the SQL database structure and Python debugging. This project helped me improve my database modelling skills and understand how Django connects models, views, templates and real data.',
       badges: ['Django', 'Python', 'Débogage Python', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'API JSON', 'JavaScript', 'Apache', 'Linux VM', 'Tests Django'],
-      proof: 'Dépôt GitHub du projet : <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a><br><strong>Preuves principales :</strong> schéma SQL dans <code>database.sql</code>, modèles dans <code>drive/models.py</code>, vues Python dans <code>drive/views.py</code>, tests Django dans <code>drive/tests.py</code>, Gantt et procédure de déploiement ci-dessous.',
+      proof: 'Dépôt GitHub du projet <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Voir le dépôt GitHub</a><br><strong>Preuves principales</strong> schéma SQL dans <code>database.sql</code>, modèles dans <code>drive/models.py</code>, vues Python dans <code>drive/views.py</code>, tests Django dans <code>drive/tests.py</code>, Gantt et procédure de déploiement ci-dessous.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {
@@ -815,7 +929,7 @@ const projectModals = {
     sae105: {
       tag: 'Project 1.05',
       title: 'Data processing',
-      context: 'We had to build a reporting tool to locate and remove large files on a disk. I made a PowerShell orchestrator that chains 3 Python scripts: the first for a GUI directory picker via PyQt5, the second for recursive tree analysis with pathlib and JSON export, and the third for an interactive pie chart with per-file checkboxes to select files for deletion. Deletion is done via a generated PowerShell script with double confirmation.',
+      context: 'We had to build a reporting tool to locate and remove large files on a disk. I made a PowerShell orchestrator that chains 3 Python scripts. The first handles a GUI directory picker via PyQt5, the second performs recursive tree analysis with pathlib and JSON export, and the third displays an interactive pie chart with per-file checkboxes to select files for deletion. Deletion is done via a generated PowerShell script with double confirmation.',
       learned: 'I learned how to structure a project across multiple scripts that communicate with each other. Using pathlib to walk directory trees and sort by size was new to me. Building a GUI with PyQt5 and pie charts with PyQtChart was also a real discovery.',
       badges: ['Python', 'PyQt5', 'PyQtChart', 'PowerShell', 'pathlib', 'JSON', 'Windows'],
       proof: 'Project brief available below.',
@@ -842,8 +956,8 @@ const projectModals = {
     sae103: {
       tag: 'Project 1.03',
       title: 'Discovering a transmission system',
-      context: 'This project focused on analysing real WiFi coverage. We measured the UHA network on the first floor and ground floor of building C, then in the university library. The measurements helped identify strong coverage areas near access points, medium but usable areas, and weak or unavailable areas, especially in halls and zones farther away from the APs. We also compared two test networks: GrA_802.11a on 5 GHz, with very limited range around the access point, and GrA_802.11g on 2.4 GHz, which reached the room and nearby rooms more effectively.',
-      learned: 'I learned how to interpret a radio coverage map, connect signal strength with access point placement and understand the practical impact of frequency bands. The 2.4 GHz / 5 GHz comparison especially showed me that theoretical throughput is not enough: range, obstacles and building layout strongly affect the final result.',
+      context: 'This project focused on analysing real WiFi coverage. We measured the UHA network on the first floor and ground floor of building C, then in the university library. The measurements helped identify strong coverage areas near access points, medium but usable areas, and weak or unavailable areas, especially in halls and zones farther away from the APs. We also compared two test networks. GrA_802.11a on 5 GHz had very limited range around the access point, while GrA_802.11g on 2.4 GHz reached the room and nearby rooms more effectively.',
+      learned: 'I learned how to interpret a radio coverage map, connect signal strength with access point placement and understand the practical impact of frequency bands. The 2.4 GHz and 5 GHz comparison especially showed me that theoretical throughput is not enough, because range, obstacles and building layout strongly affect the final result.',
       badges: ['WiFi', '802.11a', '802.11g', '2.4 GHz', '5 GHz', 'Radio coverage', 'Field measurements'],
       proof: 'Project brief and coverage screenshots available below.',
       images: [
@@ -861,18 +975,18 @@ const projectModals = {
       context: 'A 10-part progressive project to build a complete internet radio. Starting from a basic example, I added keyboard controls for volume, tone and spatialisation (VS1053 SPI registers), then dynamic WiFi management via WiFiManager, then stream playback with the ESP32_VS1053_Stream library. The final part uses MQTT and the IoT MQTT Panel Android app to control everything remotely from a phone.',
       learned: 'This project stood out mainly for its low-level technical work. Reading the VS1053 datasheet to understand the SPI registers and implementing spatialisation by hand was genuinely educational. Learning MQTT and getting an Android phone talking to the ESP32 in real time gave me a real hands-on introduction to IoT.',
       badges: ['ESP32 HUZZAH32', 'VS1053', 'Arduino C', 'WiFiManager', 'ESP32_VS1053_Stream', 'MQTT', 'PubSubClient', 'IoT MQTT Panel', 'SPI'],
-      proof: 'Source code at <a href="https://github.com/QuantumCommit7/Radio_ESP32" target="_blank" rel="noopener" class="modal-proof-link">github.com/QuantumCommit7/Radio_ESP32</a> — project brief below.',
+      proof: 'Source code at <a href="https://github.com/QuantumCommit7/Radio_ESP32" target="_blank" rel="noopener" class="modal-proof-link">github.com/QuantumCommit7/Radio_ESP32</a> - project brief below.',
       images: ['Doc/SAE%202.02/SAE202-Web_Radio-1.pdf'],
     },
     sae203: {
       tag: 'Project 2.03',
       title: 'Deploy an IT solution for a company',
-      context: 'This group project consisted of building a Django web application that simulates supermarket Drive management. The application is structured around five linked database entities: categories, products, customers, orders and order lines. It includes a dashboard with counters, full CRUD for the main data, a customer detail page with order history, and an order detail page where products can be added, quantities edited, lines removed and totals calculated automatically.',
-      tasks: 'My personal work focused mainly on the SQL database: defining the tables, the relationships between categories, products, customers, orders and order lines, foreign keys and test data. I also took part in Python debugging on the Django side, checking that views, routes, order calculations and data access behaved correctly.',
-      learned: 'This project helped me improve my relational database modelling and understand the link between SQL and Django. Python debugging also taught me to read errors, trace them back to their cause, check the interactions between models, views and templates, and test fixes inside a complete application. That is why this project represents my progress well: it combines databases, web development, debugging, tests and shared repository organisation.',
+      context: 'This group project consisted of building a Django web application that simulates supermarket Drive management. The application is structured around five linked database entities, which are categories, products, customers, orders and order lines. It includes a dashboard with counters, full CRUD for the main data, a customer detail page with order history, and an order detail page where products can be added, quantities edited, lines removed and totals calculated automatically.',
+      tasks: 'My personal work focused mainly on the SQL database by defining the tables, the relationships between categories, products, customers, orders and order lines, foreign keys and test data. I also took part in Python debugging on the Django side, checking that views, routes, order calculations and data access behaved correctly.',
+      learned: 'This project helped me improve my relational database modelling and understand the link between SQL and Django. Python debugging also taught me to read errors, trace them back to their cause, check the interactions between models, views and templates, and test fixes inside a complete application. This project represents my progress well because it combines databases, web development, debugging, tests and shared repository organisation.',
       englishSummary: 'SAE 2.03 was a group project focused on building a Django web application for supermarket Drive management. My personal contribution was mainly the SQL database structure and Python debugging. This project helped me improve my database modelling skills and understand how Django connects models, views, templates and real data.',
       badges: ['Django', 'Python', 'Python debugging', 'SQL', 'MariaDB', 'SQLite', 'CRUD', 'JSON API', 'JavaScript', 'Apache', 'Linux VM', 'Django tests'],
-      proof: 'Project GitHub repository: <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a><br><strong>Main evidence:</strong> SQL schema in <code>database.sql</code>, models in <code>drive/models.py</code>, Python views in <code>drive/views.py</code>, Django tests in <code>drive/tests.py</code>, the Gantt chart and deployment procedure below.',
+      proof: 'Project GitHub repository <a href="https://github.com/glufy100/SAE203" target="_blank" rel="noopener" class="modal-proof-link">Open the GitHub repository</a><br><strong>Main evidence</strong> SQL schema in <code>database.sql</code>, models in <code>drive/models.py</code>, Python views in <code>drive/views.py</code>, Django tests in <code>drive/tests.py</code>, the Gantt chart and deployment procedure below.',
       images: ['Doc/SAE%202.03/Gantt_SAE203_v8%281%29.xlsx', 'Doc/SAE%202.03/Fiche_Procedure_SAE203.docx'],
     },
     saegns3: {
@@ -892,7 +1006,7 @@ const skillModals = {
     c1: {
       tag: 'Compétence C1',
       title: 'Administrer les réseaux et l\'Internet',
-      context: 'Niveau BUT 1 : assister l\'administrateur réseau.',
+      context: 'Niveau BUT 1 pour assister l\'administrateur réseau.',
       learned: 'Configurer les fonctions de base d\'un réseau local, comprendre les systèmes numériques et identifier les dysfonctionnements d\'un réseau local.',
       badges: ['TCP/IP', 'VLAN', 'Adressage IP', 'Cisco IOS', 'Wireshark', 'Linux'],
       note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
@@ -908,7 +1022,7 @@ const skillModals = {
             ['R1.08', 'Bases des systèmes d\'exploitation', 6],
             ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
             ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 4],
-            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.12', 'PPP pour connaître son champ d\'activité', 2],
             ['R1.13', 'Mathématiques du signal', 5],
             ['R1.14', 'Mathématiques des transmissions', 5],
             ['SAÉ1.01', 'Sensibilisation à l\'hygiène informatique et à la cybersécurité', 10],
@@ -928,7 +1042,7 @@ const skillModals = {
             ['R2.09', 'Initiation au développement Web', 3],
             ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 12],
             ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 6],
-            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.12', 'PPP pour formaliser son projet', 2],
             ['R2.13', 'Mathématiques des systèmes numériques', 3],
             ['R2.14', 'Analyse mathématique des signaux', 4],
             ['SAÉ2.01', 'Construire un réseau informatique pour une petite structure', 20],
@@ -941,7 +1055,7 @@ const skillModals = {
     c2: {
       tag: 'Compétence C2',
       title: 'Connecter les entreprises et les usagers',
-      context: 'Niveau BUT 1 : découvrir les transmissions et la ToIP.',
+      context: 'Niveau BUT 1 pour découvrir les transmissions et la ToIP.',
       learned: 'Mesurer et analyser des signaux, caractériser des systèmes de transmission élémentaires et adapter son discours selon l\'interlocuteur.',
       badges: ['WiFi', '802.11', '2.4 GHz / 5 GHz', 'Mesures radio', 'ToIP'],
       note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
@@ -955,7 +1069,7 @@ const skillModals = {
             ['R1.05', 'Supports de transmission pour les réseaux locaux', 6],
             ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
             ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 5],
-            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.12', 'PPP pour connaître son champ d\'activité', 2],
             ['R1.13', 'Mathématiques du signal', 9],
             ['R1.14', 'Mathématiques des transmissions', 9],
             ['R1.15', 'Gestion de projet', 3],
@@ -971,7 +1085,7 @@ const skillModals = {
             ['R2.06', 'Numérisation de l\'information', 7],
             ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 4],
             ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 4],
-            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.12', 'PPP pour formaliser son projet', 2],
             ['R2.13', 'Mathématiques des systèmes numériques', 3],
             ['R2.14', 'Analyse mathématique des signaux', 9],
             ['SAÉ2.02', 'Mesurer et caractériser un signal ou un système', 20],
@@ -984,7 +1098,7 @@ const skillModals = {
     c3: {
       tag: 'Compétence C3',
       title: 'Créer des outils et applications pour les R&T',
-      context: 'Niveau BUT 1 : s\'intégrer dans un service informatique.',
+      context: 'Niveau BUT 1 pour s\'intégrer dans un service informatique.',
       learned: 'Lire, exécuter, corriger et modifier un programme, comprendre les technologies Web et choisir des mécanismes de gestion de données adaptés.',
       badges: ['Python', 'HTML/CSS', 'JavaScript', 'JSON', 'Git'],
       note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
@@ -1000,7 +1114,7 @@ const skillModals = {
             ['R1.09', 'Introduction aux technologies Web', 4],
             ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
             ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 5],
-            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.12', 'PPP pour connaître son champ d\'activité', 2],
             ['R1.15', 'Gestion de projet', 3],
             ['SAÉ1.04', 'Se présenter sur Internet', 8],
             ['SAÉ1.05', 'Traiter des données', 35],
@@ -1017,7 +1131,7 @@ const skillModals = {
             ['R2.09', 'Initiation au développement Web', 8],
             ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 4],
             ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 4],
-            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.12', 'PPP pour formaliser son projet', 2],
             ['R2.13', 'Mathématiques des systèmes numériques', 6],
             ['SAÉ2.03', 'Mettre en place une solution informatique pour l\'entreprise', 25],
             ['SAÉ2.04', 'Projet intégratif de S2', 17],
@@ -1031,7 +1145,7 @@ const skillModals = {
     c1: {
       tag: 'Skill C1',
       title: 'Administer networks and the Internet',
-      context: 'BUT 1 level: assisting the network administrator.',
+      context: 'BUT 1 level for assisting the network administrator.',
       learned: 'Configure the basic functions of a local network, understand digital systems and identify local network malfunctions.',
       badges: ['TCP/IP', 'VLAN', 'IP addressing', 'Cisco IOS', 'Wireshark', 'Linux'],
       note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
@@ -1047,7 +1161,7 @@ const skillModals = {
             ['R1.08', 'Operating system basics', 6],
             ['R1.10', 'English communication and technical vocabulary', 5],
             ['R1.11', 'Professional communication 1', 4],
-            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.12', 'PPP for understanding the professional field', 2],
             ['R1.13', 'Signal mathematics', 5],
             ['R1.14', 'Transmission mathematics', 5],
             ['SAÉ1.01', 'IT hygiene and cybersecurity awareness', 10],
@@ -1067,7 +1181,7 @@ const skillModals = {
             ['R2.09', 'Introduction to web development', 3],
             ['R2.10', 'English communication and technical English development', 12],
             ['R2.11', 'Professional communication 2', 6],
-            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.12', 'PPP for formalizing the project', 2],
             ['R2.13', 'Digital systems mathematics', 3],
             ['R2.14', 'Mathematical analysis of signals', 4],
             ['SAÉ2.01', 'Build a computer network for a small structure', 20],
@@ -1080,7 +1194,7 @@ const skillModals = {
     c2: {
       tag: 'Skill C2',
       title: 'Connect businesses and users',
-      context: 'BUT 1 level: discovering transmissions and ToIP.',
+      context: 'BUT 1 level for discovering transmissions and ToIP.',
       learned: 'Measure and analyse signals, characterise elementary transmission systems and adapt communication to the audience.',
       badges: ['WiFi', '802.11', '2.4 GHz / 5 GHz', 'Radio measurements', 'ToIP'],
       note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
@@ -1094,7 +1208,7 @@ const skillModals = {
             ['R1.05', 'Transmission media for local networks', 6],
             ['R1.10', 'English communication and technical vocabulary', 5],
             ['R1.11', 'Professional communication 1', 5],
-            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.12', 'PPP for understanding the professional field', 2],
             ['R1.13', 'Signal mathematics', 9],
             ['R1.14', 'Transmission mathematics', 9],
             ['R1.15', 'Project management', 3],
@@ -1110,7 +1224,7 @@ const skillModals = {
             ['R2.06', 'Information digitization', 7],
             ['R2.10', 'English communication and technical English development', 4],
             ['R2.11', 'Professional communication 2', 4],
-            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.12', 'PPP for formalizing the project', 2],
             ['R2.13', 'Digital systems mathematics', 3],
             ['R2.14', 'Mathematical analysis of signals', 9],
             ['SAÉ2.02', 'Measure and characterize a signal or system', 20],
@@ -1123,7 +1237,7 @@ const skillModals = {
     c3: {
       tag: 'Skill C3',
       title: 'Create tools and applications for RT',
-      context: 'BUT 1 level: joining an IT service environment.',
+      context: 'BUT 1 level for joining an IT service environment.',
       learned: 'Read, run, correct and modify a program, understand web technologies and choose suitable data management mechanisms.',
       badges: ['Python', 'HTML/CSS', 'JavaScript', 'JSON', 'Git'],
       note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
@@ -1139,7 +1253,7 @@ const skillModals = {
             ['R1.09', 'Introduction to web technologies', 4],
             ['R1.10', 'English communication and technical vocabulary', 5],
             ['R1.11', 'Professional communication 1', 5],
-            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.12', 'PPP for understanding the professional field', 2],
             ['R1.15', 'Project management', 3],
             ['SAÉ1.04', 'Present yourself online', 8],
             ['SAÉ1.05', 'Process data', 35],
@@ -1156,7 +1270,7 @@ const skillModals = {
             ['R2.09', 'Introduction to web development', 8],
             ['R2.10', 'English communication and technical English development', 4],
             ['R2.11', 'Professional communication 2', 4],
-            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.12', 'PPP for formalizing the project', 2],
             ['R2.13', 'Digital systems mathematics', 6],
             ['SAÉ2.03', 'Implement an IT solution for a company', 25],
             ['SAÉ2.04', 'Semester 2 integrative project', 17],
@@ -1175,6 +1289,35 @@ let lastModalTrigger = null;
 
 function getModalData(key) {
   return projectModals[currentLang][key] || skillModals[currentLang][key];
+}
+
+const skillTitleKeys = {
+  c1: 'skills.ue21',
+  c2: 'skills.ue22',
+  c3: 'skills.ue23',
+};
+
+function getSkillTitle(skillKey) {
+  const titleKey = skillTitleKeys[skillKey];
+  return translations[currentLang][titleKey] || translations.fr[titleKey] || skillKey.toUpperCase();
+}
+
+function renderModalCompetenceEvidence(projectKey) {
+  const project = getProjectConfig(projectKey);
+  const competences = project?.competences || [];
+  if (!competences.length) return '';
+
+  const items = competences.map(item => {
+    const evidence = translations[currentLang][item.evidenceKey] || translations.fr[item.evidenceKey] || '';
+    return `
+      <li>
+        <strong>${escapeHTML(getSkillTitle(item.key))}</strong>
+        <span>${escapeHTML(evidence)}</span>
+      </li>
+    `;
+  }).join('');
+
+  return `<ul class="modal-competence-list">${items}</ul>`;
 }
 
 function renderSkillSemesters(data) {
@@ -1220,6 +1363,12 @@ function openModal(projectKey, trigger = null) {
   tasksText.textContent = data.tasks || '';
   document.getElementById('modal-label-learned').textContent = isSkill ? t['modal.skill.label.learned'] : t['modal.label.learned'];
   document.getElementById('modal-learned').textContent      = data.learned;
+  const competencesSection = document.getElementById('modal-competences-section');
+  const competencesContent = document.getElementById('modal-competences');
+  const competenceEvidence = isSkill ? '' : renderModalCompetenceEvidence(projectKey);
+  competencesSection.hidden = !competenceEvidence;
+  document.getElementById('modal-label-competences').textContent = t['modal.label.competences'];
+  competencesContent.innerHTML = competenceEvidence;
   const englishSection = document.getElementById('modal-english-section');
   const englishText = document.getElementById('modal-english');
   englishSection.hidden = !data.englishSummary;
@@ -1318,7 +1467,7 @@ function trapModalFocus(e) {
   }
 }
 
-/* -- Fermeture : bouton X, clic fond, Échap -- */
+/* -- Fermeture avec bouton X, clic fond et Échap -- */
 document.getElementById('modal-close').addEventListener('click', closeModal);
 
 modalOverlay.addEventListener('click', e => {

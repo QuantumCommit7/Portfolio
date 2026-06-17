@@ -1,5 +1,5 @@
 /* =============================================
-   PORTFOLIO — Nathan Schneider Fetique
+   PORTFOLIO - Nathan Schneider Fetique
    Dark theme with orange accents
    ============================================= */
 
@@ -69,6 +69,7 @@ img { display: block; max-width: 100%; }
   padding: var(--section-pad) 1.5rem;
   max-width: var(--max-w);
   margin: 0 auto;
+  scroll-margin-top: calc(var(--nav-height) + 1rem);
 }
 
 .section-header {
@@ -655,8 +656,15 @@ img { display: block; max-width: 100%; }
 }
 
 .project-card.featured {
-  border-color: var(--clr-orange);
-  background: linear-gradient(135deg, var(--clr-bg-2) 0%, rgba(255,107,53,0.05) 100%);
+  border-color: var(--clr-purple);
+  background:
+    linear-gradient(135deg, rgba(156,110,250,0.12) 0%, rgba(74,144,226,0.06) 42%, var(--clr-bg-2) 100%);
+  box-shadow: 0 0 0 1px rgba(156,110,250,0.22), var(--shadow-card);
+}
+
+.project-card.featured .card-tag {
+  color: var(--clr-purple);
+  background: rgba(156,110,250,0.16);
 }
 
 .card-header {
@@ -684,7 +692,7 @@ img { display: block; max-width: 100%; }
 }
 
 .card-status--featured {
-  color: var(--clr-orange);
+  color: var(--clr-purple);
 }
 
 .card-title {
@@ -711,10 +719,67 @@ img { display: block; max-width: 100%; }
   border-top: 1px solid var(--clr-border);
 }
 
+.project-evidence {
+  margin-bottom: 1.1rem;
+  padding: 0.85rem 0.95rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+}
+
+.project-evidence h4 {
+  color: var(--clr-orange);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.project-evidence ul {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.project-evidence li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.55rem;
+  color: var(--clr-text-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.project-skill-code {
+  color: var(--clr-orange);
+  font-weight: 700;
+}
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+}
+
+.project-card.is-skill-match {
+  border-color: var(--clr-orange);
+  box-shadow: 0 0 0 2px var(--clr-orange-glow), 0 8px 32px rgba(255, 107, 53, 0.18);
+}
+
+.project-card.featured.is-skill-match {
+  border-color: var(--clr-orange);
+  box-shadow:
+    0 0 0 2px var(--clr-orange-glow),
+    0 8px 32px rgba(255, 107, 53, 0.2);
+}
+
+.project-card.is-skill-dimmed {
+  opacity: 0.48;
+}
+
+.project-card:focus {
+  outline: 2px solid var(--clr-orange);
+  outline-offset: 4px;
 }
 
 /* Badges */
@@ -859,6 +924,28 @@ img { display: block; max-width: 100%; }
 .skill-category:hover .skill-tag {
   border-color: var(--clr-orange-glow);
   color: var(--clr-text);
+}
+
+.skill-projects {
+  margin-top: 1rem;
+  color: var(--clr-text-muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.skill-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.skill-actions .card-detail-btn {
+  margin-top: 0;
+}
+
+.skill-project-btn {
+  background: transparent;
 }
 
 .skill-details {
@@ -1208,7 +1295,7 @@ img { display: block; max-width: 100%; }
 .skills-grid .fade-in:nth-child(3) { transition-delay: 0.2s; }
 .skills-grid .fade-in:nth-child(4) { transition-delay: 0.3s; }
 
-/* ===== RESPONSIVE — TABLET ===== */
+/* ===== RESPONSIVE - TABLET ===== */
 @media (max-width: 900px) {
   .hero-section {
     grid-template-columns: 1fr;
@@ -1227,7 +1314,7 @@ img { display: block; max-width: 100%; }
   .pathway-summary { position: static; }
 }
 
-/* ===== RESPONSIVE — MOBILE ===== */
+/* ===== RESPONSIVE - MOBILE ===== */
 @media (max-width: 680px) {
   :root { --nav-height: 60px; }
 
@@ -1533,6 +1620,33 @@ img { display: block; max-width: 100%; }
   line-height: 1.65;
 }
 
+.modal-competence-list {
+  display: grid;
+  gap: 0.65rem;
+  list-style: none;
+}
+
+.modal-competence-list li {
+  display: grid;
+  gap: 0.3rem;
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-left: 3px solid var(--clr-orange);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.75rem 1rem;
+}
+
+.modal-competence-list strong {
+  color: var(--clr-orange);
+  font-size: 0.76rem;
+}
+
+.modal-competence-list span {
+  color: var(--clr-text-muted);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
 /* PDF cards in modal */
 .modal-pdf-card {
   display: flex;
@@ -1609,7 +1723,7 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
-/* ===== TILT 3D — transition rapide pendant le survol ===== */
+/* ===== TILT 3D - transition rapide pendant le survol ===== */
 .project-card {
   transform-style: preserve-3d;
   will-change: transform;
