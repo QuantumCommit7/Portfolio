@@ -7,8 +7,10 @@
 const translations = {
   fr: {
     'nav.home':      'Accueil',
+    'nav.path':      'Parcours',
     'nav.projects':  'Projets',
     'nav.skills':    'Compétences',
+    'nav.tools':     'Outils',
     'nav.contact':   'Contact',
 
     'hero.greeting': 'Bonjour, je suis',
@@ -20,17 +22,34 @@ const translations = {
     'hero.cta.contact':  'Me contacter',
     'hero.badge':    'BUT R&T 2025-2028',
 
+    'path.tag': 'Formation',
+    'path.title': 'Parcours',
+    'path.subtitle': 'Mon parcours scolaire récent, du lycée vers le BUT Réseaux & Télécommunications.',
+    'path.summary.label': 'Aujourd\'hui',
+    'path.summary.title': 'BUT R&T à l\'IUT de Colmar',
+    'path.summary.text': 'Je construis progressivement mes compétences en réseau, systèmes, télécommunications et développement d\'outils techniques.',
+    'path.but.status': 'En cours',
+    'path.but.title': 'BUT Réseaux & Télécommunications',
+    'path.but.place': 'IUT de Colmar',
+    'path.but.text': 'Formation orientée administration réseau, systèmes, télécommunications, cybersécurité et développement d\'outils pour les environnements R&T.',
+    'path.bac.status': 'Diplôme obtenu',
+    'path.bac.title': 'Baccalauréat général',
+    'path.bac.place': 'Lycée général et technologique Marcel Rudloff, Strasbourg',
+    'path.bac.text': 'Spécialités Numérique et Sciences Informatiques et Mathématiques, qui m\'ont donné une base solide pour poursuivre vers les réseaux et l\'informatique.',
+
     'projects.tag':      'Portfolio',
     'projects.title':    'Projets',
     'projects.subtitle': 'Projets réalisés en formation',
 
     'semester.s1': 'Semestre 1',
     'semester.s2': 'Semestre 2',
+    'semester.final': 'Projet final',
     'semester.toggle.hide': 'Masquer les projets',
     'semester.toggle.show': 'Afficher les projets',
 
     'card.status.completed': 'Complété',
     'card.status.highlight': 'Projet phare',
+    'card.status.soon': 'Coming soon',
     'card.tag.network':      'Réseau',
     'card.tag.system':       'Système',
 
@@ -60,6 +79,10 @@ const translations = {
     'saegns3.title': 'Construire un réseau',
     'saegns3.desc':  'Déploiement complet d\'une infrastructure réseau sous GNS3 : 3 VLANs, routage inter-VLAN, adressage VLSM, RIPv2, serveurs FTP et Web, sécurisation par ACL et port-security.',
 
+    'project.final.tag': 'Projet 2.04',
+    'project.final.title': 'Projet final',
+    'project.final.desc': 'Coming soon',
+
 
     'sae101.reflect':  '💡 J\'ai vraiment découvert comment les malwares fonctionnent et j\'ai appris à expliquer des trucs techniques de façon simple pour que tout le monde comprenne.',
     'sae102.reflect':  '💡 C\'est ce projet qui m\'a vraiment appris à concevoir un réseau de zéro. Le VLSM c\'était casse-tête au départ mais une fois que j\'ai compris la logique c\'était presque fun.',
@@ -75,18 +98,45 @@ const translations = {
 
     'skills.tag':      'Expertise',
     'skills.title':    'Compétences',
-    'skills.subtitle': 'Les 3 compétences du BUT Réseaux & Télécommunications',
+    'skills.subtitle': 'Compétences du tronc commun, adaptées au niveau BUT 1',
+    'skills.coef.note': 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
+    'skills.detail.btn': 'Détail compétence',
+    'skills.semester1': 'Semestre 1',
+    'skills.semester2': 'Semestre 2',
 
-    'skills.ue21':     'UE2.1 — Administrer',
+    'skills.ue21':     'C1 — Administrer',
     'skills.ue21.sub': 'Administrer les réseaux et l\'Internet',
-    'skills.ue22':     'UE2.2 — Connecter',
+    'skills.ue21.ac1': 'Configurer les fonctions de base d\'un réseau local.',
+    'skills.ue21.ac2': 'Comprendre les systèmes numériques, le codage de l\'information et les bases d\'Internet.',
+    'skills.ue21.ac3': 'Identifier les dysfonctionnements d\'un réseau local et savoir les signaler.',
+    'skills.ue22':     'C2 — Connecter',
     'skills.ue22.sub': 'Connecter les entreprises et les usagers',
-    'skills.ue23':     'UE2.3 — Programmer',
+    'skills.ue22.ac1': 'Mesurer, analyser et commenter des signaux.',
+    'skills.ue22.ac2': 'Caractériser des systèmes de transmission élémentaires.',
+    'skills.ue22.ac3': 'Adapter son discours à un interlocuteur technique ou non technique.',
+    'skills.ue23':     'C3 — Programmer',
     'skills.ue23.sub': 'Créer des outils et applications pour les R&T',
+    'skills.ue23.ac1': 'Lire, exécuter, corriger et modifier un programme.',
+    'skills.ue23.ac2': 'Connaître l\'architecture et les technologies d\'un site Web.',
+    'skills.ue23.ac3': 'Choisir des mécanismes de gestion de données adaptés.',
 
-    'skill.proof.ue21': 'Prouvé par : Projet 1.02, Projet 1.03, Infrastructure GNS3',
-    'skill.proof.ue22': 'Prouvé par : Projet 1.01, Samba Lab',
-    'skill.proof.ue23': 'Prouvé par : Projet 2.02 (Web Radio ESP32), Projet 2.03',
+    'skill.proof.ue21': 'Niveau BUT 1 : assister l\'administrateur réseau',
+    'skill.proof.ue22': 'Niveau BUT 1 : découvrir les transmissions et la ToIP',
+    'skill.proof.ue23': 'Niveau BUT 1 : s\'intégrer dans un service informatique',
+
+    'tools.tag': 'Stack technique',
+    'tools.title': 'Outils & environnements',
+    'tools.subtitle': 'Les logiciels, plateformes et environnements que j\'utilise dans mes projets et en formation.',
+    'tools.group.languages': 'Langages & développement',
+    'tools.group.environments': 'Outils & environnements',
+    'tools.network.title': 'Réseau & simulation',
+    'tools.network.text': 'Conception, configuration et analyse de topologies réseau.',
+    'tools.system.title': 'Systèmes & services',
+    'tools.system.text': 'Administration de base, services réseau et environnement Linux.',
+    'tools.dev.title': 'Développement',
+    'tools.dev.text': 'Création de scripts, sites web et applications simples.',
+    'tools.iot.title': 'Embarqué & IoT',
+    'tools.iot.text': 'Découverte des microcontrôleurs, capteurs et communications MQTT.',
 
     'level.good':         'Bon',
     'level.intermediate': 'Intermédiaire',
@@ -98,6 +148,10 @@ const translations = {
     'modal.label.english': 'Résumé anglais',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Preuves & Documents',
+    'modal.skill.label.context': 'Niveau',
+    'modal.skill.label.learned': 'Acquis ciblés',
+    'modal.skill.label.tech': 'Domaines',
+    'modal.skill.label.proof': 'Détail par semestre',
 
     'contact.tag':    'Restons en contact',
     'contact.title':  'Me contacter',
@@ -111,8 +165,10 @@ const translations = {
 
   en: {
     'nav.home':      'Home',
+    'nav.path':      'Path',
     'nav.projects':  'Projects',
     'nav.skills':    'Skills',
+    'nav.tools':     'Tools',
     'nav.contact':   'Contact',
 
     'hero.greeting': 'Hi, I\'m',
@@ -124,17 +180,34 @@ const translations = {
     'hero.cta.contact':  'Get in touch',
     'hero.badge':    'BUT R&T 2025-2028',
 
+    'path.tag': 'Education',
+    'path.title': 'Path',
+    'path.subtitle': 'My recent academic path, from high school to the Networks & Telecommunications BUT.',
+    'path.summary.label': 'Today',
+    'path.summary.title': 'Networks & Telecommunications BUT at the IUT of Colmar',
+    'path.summary.text': 'I am progressively building skills in networking, systems, telecommunications and technical tool development.',
+    'path.but.status': 'In progress',
+    'path.but.title': 'Networks & Telecommunications BUT',
+    'path.but.place': 'IUT of Colmar',
+    'path.but.text': 'A program focused on network administration, systems, telecommunications, cybersecurity and tool development for Networks & Telecommunications environments.',
+    'path.bac.status': 'Degree obtained',
+    'path.bac.title': 'General Baccalaureate',
+    'path.bac.place': 'Marcel Rudloff General and Technological High School, Strasbourg',
+    'path.bac.text': 'Specializations in Computer Science and Mathematics, which gave me a solid base to continue toward networking and IT.',
+
     'projects.tag':      'Portfolio',
     'projects.title':    'Projects',
     'projects.subtitle': 'Projects completed during training',
 
     'semester.s1': 'Semester 1',
     'semester.s2': 'Semester 2',
+    'semester.final': 'Final project',
     'semester.toggle.hide': 'Hide projects',
     'semester.toggle.show': 'Show projects',
 
     'card.status.completed': 'Completed',
     'card.status.highlight': 'Featured',
+    'card.status.soon': 'Coming soon',
     'card.tag.network':      'Network',
     'card.tag.system':       'System',
 
@@ -164,6 +237,10 @@ const translations = {
     'saegns3.title': 'Build a network',
     'saegns3.desc':  'Full enterprise network deployment in GNS3: 3 VLANs, inter-VLAN routing, VLSM addressing, RIPv2, FTP and Web servers, ACL and port-security hardening.',
 
+    'project.final.tag': 'Project 2.04',
+    'project.final.title': 'Final project',
+    'project.final.desc': 'Coming soon',
+
 
     'sae101.reflect':  '💡 I really got to understand how malware works and learned to explain technical stuff in a simple way so anyone can get it.',
     'sae102.reflect':  '💡 This is the project that really taught me to design a network from scratch. VLSM was confusing at first but once the logic clicked it was actually pretty fun.',
@@ -179,18 +256,45 @@ const translations = {
 
     'skills.tag':      'Expertise',
     'skills.title':    'Skills',
-    'skills.subtitle': 'The 3 core competences of the BUT Networks & Telecommunications',
+    'skills.subtitle': 'Core curriculum competences, adapted to my first-year BUT level',
+    'skills.coef.note': 'The displayed coefficients correspond to this academic year and may change from one year to another.',
+    'skills.detail.btn': 'Skill details',
+    'skills.semester1': 'Semester 1',
+    'skills.semester2': 'Semester 2',
 
-    'skills.ue21':     'UE2.1 — Administer',
+    'skills.ue21':     'C1 — Administer',
     'skills.ue21.sub': 'Administer networks and the Internet',
-    'skills.ue22':     'UE2.2 — Connect',
+    'skills.ue21.ac1': 'Configure the basic functions of a local network.',
+    'skills.ue21.ac2': 'Understand digital systems, information coding and the foundations of the Internet.',
+    'skills.ue21.ac3': 'Identify local network malfunctions and know how to report them.',
+    'skills.ue22':     'C2 — Connect',
     'skills.ue22.sub': 'Connect businesses and users',
-    'skills.ue23':     'UE2.3 — Program',
+    'skills.ue22.ac1': 'Measure, analyse and comment on signals.',
+    'skills.ue22.ac2': 'Characterise elementary transmission systems.',
+    'skills.ue22.ac3': 'Adapt my communication to technical and non-technical audiences.',
+    'skills.ue23':     'C3 — Program',
     'skills.ue23.sub': 'Create tools and applications for RT',
+    'skills.ue23.ac1': 'Read, run, correct and modify a program.',
+    'skills.ue23.ac2': 'Understand the architecture and technologies of a website.',
+    'skills.ue23.ac3': 'Choose suitable data management mechanisms.',
 
-    'skill.proof.ue21': 'Proven by: Project 1.02, Project 1.03, GNS3 Infrastructure',
-    'skill.proof.ue22': 'Proven by: Project 1.01, Samba Lab',
-    'skill.proof.ue23': 'Proven by: Project 2.02 (ESP32 Web Radio), Project 2.03',
+    'skill.proof.ue21': 'BUT 1 level: assisting the network administrator',
+    'skill.proof.ue22': 'BUT 1 level: discovering transmissions and ToIP',
+    'skill.proof.ue23': 'BUT 1 level: joining an IT service environment',
+
+    'tools.tag': 'Technical stack',
+    'tools.title': 'Tools & environments',
+    'tools.subtitle': 'The software, platforms and environments I use in my projects and training.',
+    'tools.group.languages': 'Languages & development',
+    'tools.group.environments': 'Tools & environments',
+    'tools.network.title': 'Networking & simulation',
+    'tools.network.text': 'Designing, configuring and analysing network topologies.',
+    'tools.system.title': 'Systems & services',
+    'tools.system.text': 'Basic administration, network services and Linux environments.',
+    'tools.dev.title': 'Development',
+    'tools.dev.text': 'Building scripts, websites and simple applications.',
+    'tools.iot.title': 'Embedded & IoT',
+    'tools.iot.text': 'Exploring microcontrollers, modules and MQTT communication.',
 
     'level.good':         'Good',
     'level.intermediate': 'Intermediate',
@@ -202,6 +306,10 @@ const translations = {
     'modal.label.english': 'English summary',
     'modal.label.tech':    'Technologies',
     'modal.label.proof':   'Proof & Documents',
+    'modal.skill.label.context': 'Level',
+    'modal.skill.label.learned': 'Targeted outcomes',
+    'modal.skill.label.tech': 'Areas',
+    'modal.skill.label.proof': 'Details by semester',
 
     'contact.tag':    'Let\'s connect',
     'contact.title':  'Get in touch',
@@ -337,6 +445,17 @@ const projectCardGroups = {
       ],
     },
   ],
+  final: [
+    {
+      key: 'project-final',
+      tagKey: 'project.final.tag',
+      statusKey: 'card.status.soon',
+      titleKey: 'project.final.title',
+      descKey: 'project.final.desc',
+      badges: [],
+      noDetail: true,
+    },
+  ],
 };
 
 const htmlEntities = {
@@ -376,30 +495,47 @@ function getBaseText(key) {
 function renderProjectCard(project) {
   const featuredClass = project.featured ? ' featured' : '';
   const statusClass = project.featured ? ' card-status--featured' : '';
-  const badges = project.badges
+  const tag = project.tagKey ? getBaseText(project.tagKey) : project.tag;
+  const badges = (project.badges || [])
     .map(badge => `<span class="badge badge-${badge.color}">${escapeHTML(badge.label)}</span>`)
     .join('');
+  const reflect = project.reflectKey
+    ? `<p class="card-reflect" data-i18n="${escapeHTML(project.reflectKey)}">${getBaseText(project.reflectKey)}</p>`
+    : '';
+  const tags = badges ? `<div class="card-tags">${badges}</div>` : '';
+  const detailButton = project.noDetail ? '' : `<button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog" aria-label="Voir les détails du projet ${escapeHTML(tag)}">${getBaseText('modal.btn.detail')}</button>`;
 
   return `
-    <article class="project-card fade-in${featuredClass}" data-project="${escapeHTML(project.key)}">
+    <article class="project-card fade-in${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}>
       <div class="card-header">
-        <span class="card-tag">${escapeHTML(project.tag)}</span>
+        <span class="card-tag"${project.tagKey ? ` data-i18n="${escapeHTML(project.tagKey)}"` : ''}>${escapeHTML(tag)}</span>
         <div class="card-status${statusClass}" data-i18n="${escapeHTML(project.statusKey)}">${getBaseText(project.statusKey)}</div>
       </div>
       <h3 class="card-title" data-i18n="${escapeHTML(project.titleKey)}">${getBaseText(project.titleKey)}</h3>
       <p class="card-desc" data-i18n="${escapeHTML(project.descKey)}">${getBaseText(project.descKey)}</p>
-      <p class="card-reflect" data-i18n="${escapeHTML(project.reflectKey)}">${getBaseText(project.reflectKey)}</p>
-      <div class="card-tags">${badges}</div>
-      <button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog" aria-label="Voir les détails du projet ${escapeHTML(project.tag)}">${getBaseText('modal.btn.detail')}</button>
+      ${reflect}
+      ${tags}
+      ${detailButton}
     </article>`;
 }
 
 function bindProjectDetailButtons() {
-  document.querySelectorAll('.card-detail-btn').forEach(btn => {
+  document.querySelectorAll('[data-project] .card-detail-btn').forEach(btn => {
     btn.addEventListener('click', e => {
       e.stopPropagation();
       const key = btn.closest('[data-project]').dataset.project;
       openModal(key, btn);
+    });
+  });
+}
+
+function bindSkillDetailButtons() {
+  document.querySelectorAll('[data-skill-modal]').forEach(btn => {
+    if (btn.dataset.skillBound) return;
+    btn.dataset.skillBound = 'true';
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      openModal(btn.dataset.skillModal, btn);
     });
   });
 }
@@ -571,6 +707,7 @@ function observeSkillCategories() {
 
 /* ===== INIT ===== */
 renderProjectCards();
+bindSkillDetailButtons();
 initSemesterToggles();
 observeFadeElements();
 observeSkillCategories();
@@ -750,40 +887,347 @@ const projectModals = {
   },
 };
 
+const skillModals = {
+  fr: {
+    c1: {
+      tag: 'Compétence C1',
+      title: 'Administrer les réseaux et l\'Internet',
+      context: 'Niveau BUT 1 : assister l\'administrateur réseau.',
+      learned: 'Configurer les fonctions de base d\'un réseau local, comprendre les systèmes numériques et identifier les dysfonctionnements d\'un réseau local.',
+      badges: ['TCP/IP', 'VLAN', 'Adressage IP', 'Cisco IOS', 'Wireshark', 'Linux'],
+      note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
+      semesters: [
+        {
+          title: 'Semestre 1',
+          items: [
+            ['R1.01', 'Initiation aux réseaux locaux', 13],
+            ['R1.02', 'Principes et architecture des réseaux', 12],
+            ['R1.03', 'Réseaux locaux et équipements actifs', 7],
+            ['R1.04', 'Fondamentaux des systèmes électroniques', 8],
+            ['R1.06', 'Architecture des systèmes numériques et informatiques', 5],
+            ['R1.08', 'Bases des systèmes d\'exploitation', 6],
+            ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
+            ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 4],
+            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.13', 'Mathématiques du signal', 5],
+            ['R1.14', 'Mathématiques des transmissions', 5],
+            ['SAÉ1.01', 'Sensibilisation à l\'hygiène informatique et à la cybersécurité', 10],
+            ['SAÉ1.02', 'S\'initier aux réseaux informatiques', 31],
+          ],
+        },
+        {
+          title: 'Semestre 2',
+          items: [
+            ['R2.01', 'Technologie de l\'Internet', 15],
+            ['R2.02', 'Administration système et fondamentaux de la virtualisation', 10],
+            ['R2.03', 'Bases des services réseaux', 13],
+            ['R2.04', 'Initiation à la téléphonie d\'entreprise', 7],
+            ['R2.05', 'Signaux et Systèmes pour les transmissions', 5],
+            ['R2.06', 'Numérisation de l\'information', 3],
+            ['R2.07', 'Sources de données', 1],
+            ['R2.09', 'Initiation au développement Web', 3],
+            ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 12],
+            ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 6],
+            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.13', 'Mathématiques des systèmes numériques', 3],
+            ['R2.14', 'Analyse mathématique des signaux', 4],
+            ['SAÉ2.01', 'Construire un réseau informatique pour une petite structure', 20],
+            ['SAÉ2.04', 'Projet intégratif de S2', 17],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+    c2: {
+      tag: 'Compétence C2',
+      title: 'Connecter les entreprises et les usagers',
+      context: 'Niveau BUT 1 : découvrir les transmissions et la ToIP.',
+      learned: 'Mesurer et analyser des signaux, caractériser des systèmes de transmission élémentaires et adapter son discours selon l\'interlocuteur.',
+      badges: ['WiFi', '802.11', '2.4 GHz / 5 GHz', 'Mesures radio', 'ToIP'],
+      note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
+      semesters: [
+        {
+          title: 'Semestre 1',
+          items: [
+            ['R1.01', 'Initiation aux réseaux locaux', 4],
+            ['R1.03', 'Réseaux locaux et équipements actifs', 2],
+            ['R1.04', 'Fondamentaux des systèmes électroniques', 8],
+            ['R1.05', 'Supports de transmission pour les réseaux locaux', 6],
+            ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
+            ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 5],
+            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.13', 'Mathématiques du signal', 9],
+            ['R1.14', 'Mathématiques des transmissions', 9],
+            ['R1.15', 'Gestion de projet', 3],
+            ['SAÉ1.03', 'Découvrir un dispositif de transmission', 36],
+          ],
+        },
+        {
+          title: 'Semestre 2',
+          items: [
+            ['R2.01', 'Technologie de l\'Internet', 5],
+            ['R2.04', 'Initiation à la téléphonie d\'entreprise', 3],
+            ['R2.05', 'Signaux et Systèmes pour les transmissions', 10],
+            ['R2.06', 'Numérisation de l\'information', 7],
+            ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 4],
+            ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 4],
+            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.13', 'Mathématiques des systèmes numériques', 3],
+            ['R2.14', 'Analyse mathématique des signaux', 9],
+            ['SAÉ2.02', 'Mesurer et caractériser un signal ou un système', 20],
+            ['SAÉ2.04', 'Projet intégratif de S2', 15],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+    c3: {
+      tag: 'Compétence C3',
+      title: 'Créer des outils et applications pour les R&T',
+      context: 'Niveau BUT 1 : s\'intégrer dans un service informatique.',
+      learned: 'Lire, exécuter, corriger et modifier un programme, comprendre les technologies Web et choisir des mécanismes de gestion de données adaptés.',
+      badges: ['Python', 'HTML/CSS', 'JavaScript', 'JSON', 'Git'],
+      note: 'Les coefficients affichés correspondent à cette année de formation et peuvent changer d\'une année à l\'autre.',
+      semesters: [
+        {
+          title: 'Semestre 1',
+          items: [
+            ['R1.01', 'Initiation aux réseaux locaux', 5],
+            ['R1.03', 'Réseaux locaux et équipements actifs', 2],
+            ['R1.06', 'Architecture des systèmes numériques et informatiques', 5],
+            ['R1.07', 'Fondamentaux de la programmation', 19],
+            ['R1.08', 'Bases des systèmes d\'exploitation', 6],
+            ['R1.09', 'Introduction aux technologies Web', 4],
+            ['R1.10', 'Anglais de communication et initiation au vocabulaire technique', 5],
+            ['R1.11', 'Expression-Culture-Communication Professionnelles 1', 5],
+            ['R1.12', 'PPP : Connaître son champ d\'activité', 2],
+            ['R1.15', 'Gestion de projet', 3],
+            ['SAÉ1.04', 'Se présenter sur Internet', 8],
+            ['SAÉ1.05', 'Traiter des données', 35],
+          ],
+        },
+        {
+          title: 'Semestre 2',
+          items: [
+            ['R2.01', 'Technologie de l\'Internet', 5],
+            ['R2.02', 'Administration système et fondamentaux de la virtualisation', 3],
+            ['R2.04', 'Initiation à la téléphonie d\'entreprise', 3],
+            ['R2.07', 'Sources de données', 7],
+            ['R2.08', 'Analyse et traitement de données structurées', 7],
+            ['R2.09', 'Initiation au développement Web', 8],
+            ['R2.10', 'Anglais de communication et développement de l\'anglais technique', 4],
+            ['R2.11', 'Expression-Culture-Communication Professionnelles 2', 4],
+            ['R2.12', 'PPP : Formalisation du projet', 2],
+            ['R2.13', 'Mathématiques des systèmes numériques', 6],
+            ['SAÉ2.03', 'Mettre en place une solution informatique pour l\'entreprise', 25],
+            ['SAÉ2.04', 'Projet intégratif de S2', 17],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+  },
+  en: {
+    c1: {
+      tag: 'Skill C1',
+      title: 'Administer networks and the Internet',
+      context: 'BUT 1 level: assisting the network administrator.',
+      learned: 'Configure the basic functions of a local network, understand digital systems and identify local network malfunctions.',
+      badges: ['TCP/IP', 'VLAN', 'IP addressing', 'Cisco IOS', 'Wireshark', 'Linux'],
+      note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
+      semesters: [
+        {
+          title: 'Semester 1',
+          items: [
+            ['R1.01', 'Introduction to local networks', 13],
+            ['R1.02', 'Network principles and architecture', 12],
+            ['R1.03', 'Local networks and active equipment', 7],
+            ['R1.04', 'Fundamentals of electronic systems', 8],
+            ['R1.06', 'Digital and computer system architecture', 5],
+            ['R1.08', 'Operating system basics', 6],
+            ['R1.10', 'English communication and technical vocabulary', 5],
+            ['R1.11', 'Professional communication 1', 4],
+            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.13', 'Signal mathematics', 5],
+            ['R1.14', 'Transmission mathematics', 5],
+            ['SAÉ1.01', 'IT hygiene and cybersecurity awareness', 10],
+            ['SAÉ1.02', 'Introduction to computer networks', 31],
+          ],
+        },
+        {
+          title: 'Semester 2',
+          items: [
+            ['R2.01', 'Internet technology', 15],
+            ['R2.02', 'System administration and virtualization fundamentals', 10],
+            ['R2.03', 'Network service basics', 13],
+            ['R2.04', 'Introduction to enterprise telephony', 7],
+            ['R2.05', 'Signals and systems for transmissions', 5],
+            ['R2.06', 'Information digitization', 3],
+            ['R2.07', 'Data sources', 1],
+            ['R2.09', 'Introduction to web development', 3],
+            ['R2.10', 'English communication and technical English development', 12],
+            ['R2.11', 'Professional communication 2', 6],
+            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.13', 'Digital systems mathematics', 3],
+            ['R2.14', 'Mathematical analysis of signals', 4],
+            ['SAÉ2.01', 'Build a computer network for a small structure', 20],
+            ['SAÉ2.04', 'Semester 2 integrative project', 17],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+    c2: {
+      tag: 'Skill C2',
+      title: 'Connect businesses and users',
+      context: 'BUT 1 level: discovering transmissions and ToIP.',
+      learned: 'Measure and analyse signals, characterise elementary transmission systems and adapt communication to the audience.',
+      badges: ['WiFi', '802.11', '2.4 GHz / 5 GHz', 'Radio measurements', 'ToIP'],
+      note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
+      semesters: [
+        {
+          title: 'Semester 1',
+          items: [
+            ['R1.01', 'Introduction to local networks', 4],
+            ['R1.03', 'Local networks and active equipment', 2],
+            ['R1.04', 'Fundamentals of electronic systems', 8],
+            ['R1.05', 'Transmission media for local networks', 6],
+            ['R1.10', 'English communication and technical vocabulary', 5],
+            ['R1.11', 'Professional communication 1', 5],
+            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.13', 'Signal mathematics', 9],
+            ['R1.14', 'Transmission mathematics', 9],
+            ['R1.15', 'Project management', 3],
+            ['SAÉ1.03', 'Discover a transmission device', 36],
+          ],
+        },
+        {
+          title: 'Semester 2',
+          items: [
+            ['R2.01', 'Internet technology', 5],
+            ['R2.04', 'Introduction to enterprise telephony', 3],
+            ['R2.05', 'Signals and systems for transmissions', 10],
+            ['R2.06', 'Information digitization', 7],
+            ['R2.10', 'English communication and technical English development', 4],
+            ['R2.11', 'Professional communication 2', 4],
+            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.13', 'Digital systems mathematics', 3],
+            ['R2.14', 'Mathematical analysis of signals', 9],
+            ['SAÉ2.02', 'Measure and characterize a signal or system', 20],
+            ['SAÉ2.04', 'Semester 2 integrative project', 15],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+    c3: {
+      tag: 'Skill C3',
+      title: 'Create tools and applications for RT',
+      context: 'BUT 1 level: joining an IT service environment.',
+      learned: 'Read, run, correct and modify a program, understand web technologies and choose suitable data management mechanisms.',
+      badges: ['Python', 'HTML/CSS', 'JavaScript', 'JSON', 'Git'],
+      note: 'The displayed coefficients correspond to this academic year and may change from one year to another.',
+      semesters: [
+        {
+          title: 'Semester 1',
+          items: [
+            ['R1.01', 'Introduction to local networks', 5],
+            ['R1.03', 'Local networks and active equipment', 2],
+            ['R1.06', 'Digital and computer system architecture', 5],
+            ['R1.07', 'Programming fundamentals', 19],
+            ['R1.08', 'Operating system basics', 6],
+            ['R1.09', 'Introduction to web technologies', 4],
+            ['R1.10', 'English communication and technical vocabulary', 5],
+            ['R1.11', 'Professional communication 1', 5],
+            ['R1.12', 'PPP: understanding the professional field', 2],
+            ['R1.15', 'Project management', 3],
+            ['SAÉ1.04', 'Present yourself online', 8],
+            ['SAÉ1.05', 'Process data', 35],
+          ],
+        },
+        {
+          title: 'Semester 2',
+          items: [
+            ['R2.01', 'Internet technology', 5],
+            ['R2.02', 'System administration and virtualization fundamentals', 3],
+            ['R2.04', 'Introduction to enterprise telephony', 3],
+            ['R2.07', 'Data sources', 7],
+            ['R2.08', 'Structured data analysis and processing', 7],
+            ['R2.09', 'Introduction to web development', 8],
+            ['R2.10', 'English communication and technical English development', 4],
+            ['R2.11', 'Professional communication 2', 4],
+            ['R2.12', 'PPP: project formalization', 2],
+            ['R2.13', 'Digital systems mathematics', 6],
+            ['SAÉ2.03', 'Implement an IT solution for a company', 25],
+            ['SAÉ2.04', 'Semester 2 integrative project', 17],
+            ['SAÉ2.05', 'Portfolio', 2],
+          ],
+        },
+      ],
+    },
+  },
+};
+
 /* -- Références DOM modal -- */
 const modalOverlay = document.getElementById('modal-overlay');
 const modalBox     = document.getElementById('modal-box');
 let lastModalTrigger = null;
 
+function getModalData(key) {
+  return projectModals[currentLang][key] || skillModals[currentLang][key];
+}
+
+function renderSkillSemesters(data) {
+  const coefLabel = currentLang === 'fr' ? 'Coef.' : 'Coeff.';
+  const semesters = data.semesters.map(semester => {
+    const items = semester.items.map(([code, name, coef]) => `
+      <li>
+        <span><strong class="skill-code">${escapeHTML(code)}</strong> - ${escapeHTML(name)}</span>
+        <strong>${coefLabel} ${escapeHTML(String(coef))}</strong>
+      </li>
+    `).join('');
+
+    return `
+      <details class="skill-semester-details modal-skill-semester" open>
+        <summary>${escapeHTML(semester.title)}</summary>
+        <ul class="skill-coef-list">${items}</ul>
+      </details>
+    `;
+  }).join('');
+
+  return `<p class="modal-skill-note">${escapeHTML(data.note)}</p>${semesters}`;
+}
+
 /* -- Construire et ouvrir le modal -- */
 function openModal(projectKey, trigger = null) {
-  const data = projectModals[currentLang][projectKey];
+  const data = getModalData(projectKey);
   if (!data) return;
   if (trigger) lastModalTrigger = trigger;
   else if (!lastModalTrigger) lastModalTrigger = document.activeElement;
 
   const t = translations[currentLang];
+  const isSkill = Boolean(skillModals[currentLang][projectKey]);
 
   // Remplir les champs
   document.getElementById('modal-tag').textContent          = data.tag;
   document.getElementById('modal-title').textContent        = data.title;
-  document.getElementById('modal-label-context').textContent = t['modal.label.context'];
+  document.getElementById('modal-label-context').textContent = isSkill ? t['modal.skill.label.context'] : t['modal.label.context'];
   document.getElementById('modal-context').textContent      = data.context;
   const tasksSection = document.getElementById('modal-tasks-section');
   const tasksText = document.getElementById('modal-tasks');
   tasksSection.hidden = !data.tasks;
   document.getElementById('modal-label-tasks').textContent  = t['modal.label.tasks'];
   tasksText.textContent = data.tasks || '';
-  document.getElementById('modal-label-learned').textContent = t['modal.label.learned'];
+  document.getElementById('modal-label-learned').textContent = isSkill ? t['modal.skill.label.learned'] : t['modal.label.learned'];
   document.getElementById('modal-learned').textContent      = data.learned;
   const englishSection = document.getElementById('modal-english-section');
   const englishText = document.getElementById('modal-english');
   englishSection.hidden = !data.englishSummary;
   document.getElementById('modal-label-english').textContent = t['modal.label.english'];
   englishText.textContent = data.englishSummary || '';
-  document.getElementById('modal-label-tech').textContent   = t['modal.label.tech'];
-  document.getElementById('modal-label-proof').textContent  = t['modal.label.proof'];
-  document.getElementById('modal-proof').innerHTML          = data.proof;
+  document.getElementById('modal-label-tech').textContent   = isSkill ? t['modal.skill.label.tech'] : t['modal.label.tech'];
+  document.getElementById('modal-label-proof').textContent  = isSkill ? t['modal.skill.label.proof'] : t['modal.label.proof'];
+  document.getElementById('modal-proof').innerHTML          = isSkill ? renderSkillSemesters(data) : data.proof;
 
   // Badges technologies
   const badgesEl = document.getElementById('modal-badges');
@@ -833,8 +1277,10 @@ function openModal(projectKey, trigger = null) {
 
   // Afficher
   document.body.style.overflow = 'hidden';
+  modalBox.scrollTop = 0;
   modalOverlay.classList.add('open');
-  document.getElementById('modal-close').focus();
+  document.getElementById('modal-close').focus({ preventScroll: true });
+  modalBox.scrollTop = 0;
 
   // Stocker la clé pour la mise à jour langue
   modalOverlay.dataset.currentProject = projectKey;
@@ -970,254 +1416,6 @@ toggleLanguage = function() {
     requestAnimationFrame(frame);
   }
   frame();
-})();
-
-/* =============================================
-   TERMINAL INTERACTIF
-   ============================================= */
-(function () {
-  const cmds = {
-    fr: {
-      help: [
-        '<span class="tc">── Commandes disponibles ──────────────────</span>',
-        '  <b>whoami</b>         présentation de Nathan',
-        '  <b>skills</b>         compétences BUT R&T',
-        '  <b>projects</b>       liste des projets',
-        '  <b>ping nathan</b>    tester la connexion',
-        '  <b>traceroute</b>     chemin vers la réussite',
-        '  <b>neofetch</b>       fiche système',
-        '  <b>contact</b>        coordonnées',
-        '  <b>clear</b>          vider le terminal',
-      ],
-      whoami: [
-        '<b>Nom :</b>     Nathan Schneider Fetique',
-        '<b>Statut :</b>  Étudiant BUT R&T — IUT de Colmar',
-        '<b>Promo :</b>   2025-2028',
-        '<b>Focus :</b>   Réseaux · Systèmes · IoT',
-        '<b>État :</b>    <span class="tok">● En ligne et disponible</span>',
-      ],
-      skills: [
-        '<span class="tc">UE2.1 Administrer :</span>  TCP/IP · VLAN · STP · RIPv2 · GNS3 · Wireshark',
-        '<span class="tc">UE2.2 Connecter :</span>    Linux/Debian · Windows Server · Bash · Samba',
-        '<span class="tc">UE2.3 Programmer :</span>   Python · C/Arduino · ESP32 HUZZAH32 · MQTT',
-      ],
-      projects: [
-        '<span class="tc">── Projets réalisés ───────────────────────</span>',
-        '  <b>1.01</b>  Administration poste informatique',
-        '  <b>1.02</b>  Déploiement réseau local',
-        '  <b>1.03</b>  Mesures de couverture WiFi',
-        '  <b>2.02</b>  Web Radio ESP32',
-        '  <b>2.03</b>  <span class="tok">Solution Drive web / base de données  ★ projet phare</span>',
-        '  <b>GNS3</b>  Infrastructure VLAN/STP/RIPv2',
-        '  <b>Lab</b>   Samba / Debian 12',
-      ],
-      contact: [
-        '<b>LinkedIn :</b>  linkedin.com/in/nathan-schneider-fetique-17a2b13b2',
-        '<b>GitHub :</b>    github.com/QuantumCommit7',
-        '<b>École :</b>     IUT de Colmar — BUT R&T',
-      ],
-      neofetch: [
-        ' <span class="to">  ███╗   ██╗</span>  <b>nathan</b>@<b>portfolio</b>',
-        ' <span class="to">  ████╗  ██║</span>  ─────────────────────────',
-        ' <span class="to">  ██╔██╗ ██║</span>  <b>OS :</b>      Portfolio v1.0',
-        ' <span class="to">  ██║╚██╗██║</span>  <b>Kernel :</b>  HTML5 · CSS3 · JS Vanilla',
-        ' <span class="to">  ██║ ╚████║</span>  <b>Shell :</b>   BUT R&T 2025',
-        ' <span class="to">  ╚═╝  ╚═══╝</span>  <b>CPU :</b>     Cerveau humain @ ∞ GHz',
-        '               <b>RAM :</b>     Insuffisante avant café ☕',
-        '               <b>Uptime :</b> 1 an de formation',
-      ],
-      'ping nathan': [
-        'PING nathan.local (192.168.1.42) 56 bytes of data.',
-        '64 bytes: icmp_seq=1 ttl=64 <span class="tok">time=0.42 ms</span>',
-        '64 bytes: icmp_seq=2 ttl=64 <span class="tok">time=0.38 ms</span>',
-        '64 bytes: icmp_seq=3 ttl=64 <span class="tok">time=0.41 ms</span>',
-        '— 3 packets, 3 received, <span class="tok">0% packet loss</span> ✓',
-      ],
-      traceroute: [
-        'traceroute to career.success, max 30 hops',
-        ' 1  iut-colmar.edu        10.0.0.1      <span class="tok">1 ms</span>',
-        ' 2  but-rt.formation      172.16.1.1    <span class="tok">2 ms</span>',
-        ' 3  stage.entreprise      10.42.0.1     <span class="tok">8 ms</span>',
-        ' 4  <span class="to">career.success</span>                          <span class="tok">∞ ms  ✓</span>',
-      ],
-      'sudo rm -rf /': ['<span class="terr">Permission refusée. C\'est un portfolio, pas un CTF 😄</span>'],
-      clear: '__clear__',
-    },
-    en: {
-      help: [
-        '<span class="tc">── Available commands ─────────────────────</span>',
-        '  <b>whoami</b>         about Nathan',
-        '  <b>skills</b>         BUT R&T competencies',
-        '  <b>projects</b>       project list',
-        '  <b>ping nathan</b>    test connection',
-        '  <b>traceroute</b>     path to success',
-        '  <b>neofetch</b>       system info',
-        '  <b>contact</b>        get in touch',
-        '  <b>clear</b>          clear screen',
-      ],
-      whoami: [
-        '<b>Name:</b>    Nathan Schneider Fetique',
-        '<b>Status:</b>  BUT R&T Student — IUT de Colmar',
-        '<b>Cohort:</b>  2025-2028',
-        '<b>Focus:</b>   Networking · Systems · IoT',
-        '<b>State:</b>   <span class="tok">● Online and available</span>',
-      ],
-      skills: [
-        '<span class="tc">UE2.1 Administer:</span>  TCP/IP · VLAN · STP · RIPv2 · GNS3 · Wireshark',
-        '<span class="tc">UE2.2 Connect:</span>     Linux/Debian · Windows Server · Bash · Samba',
-        '<span class="tc">UE2.3 Program:</span>     Python · C/Arduino · ESP32 HUZZAH32 · MQTT',
-      ],
-      projects: [
-        '<span class="tc">── Projects ───────────────────────────────</span>',
-        '  <b>1.01</b>  Workstation Administration',
-        '  <b>1.02</b>  Local Network Deployment',
-        '  <b>1.03</b>  WiFi coverage measurements',
-        '  <b>2.02</b>  ESP32 Web Radio',
-        '  <b>2.03</b>  <span class="tok">Drive web app / database  ★ featured</span>',
-        '  <b>GNS3</b>  VLAN/STP/RIPv2 Infrastructure',
-        '  <b>Lab</b>   Samba / Debian 12',
-      ],
-      contact: [
-        '<b>LinkedIn:</b>  linkedin.com/in/nathan-schneider-fetique-17a2b13b2',
-        '<b>GitHub:</b>    github.com/QuantumCommit7',
-        '<b>School:</b>    IUT de Colmar — BUT R&T',
-      ],
-      neofetch: [
-        ' <span class="to">  ███╗   ██╗</span>  <b>nathan</b>@<b>portfolio</b>',
-        ' <span class="to">  ████╗  ██║</span>  ─────────────────────────',
-        ' <span class="to">  ██╔██╗ ██║</span>  <b>OS:</b>      Portfolio v1.0',
-        ' <span class="to">  ██║╚██╗██║</span>  <b>Kernel:</b>  HTML5 · CSS3 · Vanilla JS',
-        ' <span class="to">  ██║ ╚████║</span>  <b>Shell:</b>   BUT R&T 2025',
-        ' <span class="to">  ╚═╝  ╚═══╝</span>  <b>CPU:</b>     Human Brain @ ∞ GHz',
-        '               <b>RAM:</b>     Not enough before coffee ☕',
-        '               <b>Uptime:</b> 1 year of training',
-      ],
-      'ping nathan': [
-        'PING nathan.local (192.168.1.42) 56 bytes of data.',
-        '64 bytes: icmp_seq=1 ttl=64 <span class="tok">time=0.42 ms</span>',
-        '64 bytes: icmp_seq=2 ttl=64 <span class="tok">time=0.38 ms</span>',
-        '64 bytes: icmp_seq=3 ttl=64 <span class="tok">time=0.41 ms</span>',
-        '— 3 packets, 3 received, <span class="tok">0% packet loss</span> ✓',
-      ],
-      traceroute: [
-        'traceroute to career.success, max 30 hops',
-        ' 1  iut-colmar.edu        10.0.0.1      <span class="tok">1 ms</span>',
-        ' 2  but-rt.formation      172.16.1.1    <span class="tok">2 ms</span>',
-        ' 3  internship.company    10.42.0.1     <span class="tok">8 ms</span>',
-        ' 4  <span class="to">career.success</span>                          <span class="tok">∞ ms  ✓</span>',
-      ],
-      'sudo rm -rf /': ['<span class="terr">Permission denied. This is a portfolio, not a CTF 😄</span>'],
-      clear: '__clear__',
-    },
-  };
-
-  /* -- Build DOM -- */
-  const toggle = document.createElement('button');
-  toggle.id    = 'term-toggle';
-  toggle.title = 'Terminal';
-  toggle.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>';
-
-  const win = document.createElement('div');
-  win.id = 'term-win';
-  win.innerHTML = `
-    <div id="term-bar">
-      <div class="term-dots">
-        <span class="td td-r" id="td-close"></span>
-        <span class="td td-y"></span>
-        <span class="td td-g"></span>
-      </div>
-      <span class="term-title">nathan@portfolio:~</span>
-    </div>
-    <div id="term-body">
-      <div id="term-out"></div>
-      <div class="term-row">
-        <span class="term-ps">$</span>
-        <input id="term-in" type="text" autocomplete="off" spellcheck="false" />
-      </div>
-    </div>`;
-
-  document.body.append(toggle, win);
-
-  const out   = document.getElementById('term-out');
-  const input = document.getElementById('term-in');
-  let   open  = false;
-  let   hist  = [], hIdx = -1;
-
-  /* -- Drag -- */
-  let drag = false, dx = 0, dy = 0;
-  document.getElementById('term-bar').addEventListener('mousedown', e => {
-    drag = true;
-    const r = win.getBoundingClientRect();
-    dx = e.clientX - r.left;
-    dy = e.clientY - r.top;
-  });
-  document.addEventListener('mousemove', e => {
-    if (!drag) return;
-    win.style.left   = (e.clientX - dx) + 'px';
-    win.style.top    = (e.clientY - dy) + 'px';
-    win.style.bottom = 'auto';
-    win.style.right  = 'auto';
-  });
-  document.addEventListener('mouseup', () => drag = false);
-
-  /* -- Output helpers -- */
-  function print(lines) {
-    lines.forEach(l => {
-      const d = document.createElement('div');
-      d.innerHTML = l;
-      out.appendChild(d);
-    });
-    out.scrollTop = out.scrollHeight;
-  }
-
-  function echo(raw) {
-    const d = document.createElement('div');
-    d.innerHTML = `<span class="term-ps-echo">$</span> ${raw}`;
-    out.appendChild(d);
-  }
-
-  /* -- Run command -- */
-  function run(raw) {
-    const cmd = raw.trim().toLowerCase();
-    if (!cmd) return;
-    hist.unshift(raw.trim());
-    hIdx = -1;
-    echo(raw.trim());
-    const map = cmds[currentLang] || cmds.fr;
-    if (map[cmd] === '__clear__') { out.innerHTML = ''; return; }
-    if (map[cmd]) { print(map[cmd]); }
-    else { print([`<span class="terr">Commande inconnue : "${cmd}" — tapez <b>help</b></span>`]); }
-  }
-
-  function openTerm() {
-    open = true;
-    win.classList.add('open');
-    toggle.classList.add('active');
-    input.focus();
-    if (!out.children.length)
-      print(['<span class="to">nathan@portfolio:~</span>  Tapez <b>help</b> pour commencer.']);
-  }
-
-  function closeTerm() {
-    open = false;
-    win.classList.remove('open');
-    toggle.classList.remove('active');
-  }
-
-  toggle.addEventListener('click', () => open ? closeTerm() : openTerm());
-  document.getElementById('td-close').addEventListener('click', closeTerm);
-
-  input.addEventListener('keydown', e => {
-    if (e.key === 'Enter') { run(input.value); input.value = ''; }
-    else if (e.key === 'ArrowUp') {
-      e.preventDefault();
-      if (hIdx < hist.length - 1) input.value = hist[++hIdx];
-    } else if (e.key === 'ArrowDown') {
-      e.preventDefault();
-      input.value = hIdx > 0 ? hist[--hIdx] : '';
-      if (hIdx <= 0) hIdx = -1;
-    }
-  });
 })();
 
 /* =============================================
