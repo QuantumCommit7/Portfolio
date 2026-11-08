@@ -610,7 +610,7 @@ function renderProjectCard(project) {
   const detailButton = project.noDetail ? '' : `<button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog">${getBaseText('modal.btn.detail')}</button>`;
 
   return `
-    <article class="project-card fade-in${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}${competenceAttr}>
+    <article class="project-card fade-in visible${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}${competenceAttr}>
       <div class="card-header">
         <span class="card-tag"${project.tagKey ? ` data-i18n="${escapeHTML(project.tagKey)}"` : ''}>${escapeHTML(tag)}</span>
         <div class="card-status${statusClass}" data-i18n="${escapeHTML(project.statusKey)}">${getBaseText(project.statusKey)}</div>
