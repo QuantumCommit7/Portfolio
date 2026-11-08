@@ -82,6 +82,12 @@ const translations = {
     'project.final.tag': 'Projet 2.04',
     'project.final.title': 'Projet final',
     'project.final.desc': 'Coming soon',
+    'year.second': 'Deuxième année',
+    'project.sae302.tag': 'SAE 3.02',
+    'project.sae302.title': 'SAE 3.02 — Développer des applications communicantes',
+    'project.sae302.desc': 'Simulateur de trafic routier développé en Python par l’équipe Les_Nameks : graphe pondéré, itinéraires calculés par Dijkstra et circulation avec feux.',
+    'project.sae302.reflect': '💡 Projet de groupe réunissant algorithmique, interface graphique et communication entre Windows et un serveur Debian.',
+    'project.sae302.status': 'Développement terminé',
 
 
     'sae101.reflect':  '💡 J\'ai vraiment découvert comment les malwares fonctionnent et j\'ai appris à expliquer des trucs techniques de façon simple pour que tout le monde comprenne.',
@@ -110,7 +116,7 @@ const translations = {
     'skills.ue21.ac1': 'Configurer les fonctions de base d\'un réseau local.',
     'skills.ue21.ac2': 'Comprendre les systèmes numériques, le codage de l\'information et les bases d\'Internet.',
     'skills.ue21.ac3': 'Identifier les dysfonctionnements d\'un réseau local et savoir les signaler.',
-    'skills.ue21.projects': 'Projets associés à cette compétence 1.01, 1.02 et 2.01',
+    'skills.ue21.projects': 'Projets associés à cette compétence 1.01, 1.02, 2.01 et 3.02',
     'skills.ue22':     'C2 - Connecter',
     'skills.ue22.sub': 'Connecter les entreprises et les usagers',
     'skills.ue22.ac1': 'Mesurer, analyser et commenter des signaux.',
@@ -122,7 +128,7 @@ const translations = {
     'skills.ue23.ac1': 'Lire, exécuter, corriger et modifier un programme.',
     'skills.ue23.ac2': 'Connaître l\'architecture et les technologies d\'un site Web.',
     'skills.ue23.ac3': 'Choisir des mécanismes de gestion de données adaptés.',
-    'skills.ue23.projects': 'Projets associés à cette compétence 1.04, 1.05 et 2.03',
+    'skills.ue23.projects': 'Projets associés à cette compétence 1.04, 1.05, 2.03 et 3.02',
 
     'skill.proof.ue21': 'Niveau BUT 1 pour assister l\'administrateur réseau',
     'skill.proof.ue22': 'Niveau BUT 1 pour découvrir les transmissions et la ToIP',
@@ -167,6 +173,8 @@ const translations = {
     'evidence.saegns3.c1': 'Construction d\'une infrastructure complète avec VLAN, routage, services réseau, ACL et port-security.',
     'evidence.sae202.c2': 'Caractérisation d\'un système communicant avec ESP32, flux audio, WiFi, registres du VS1053 et pilotage MQTT.',
     'evidence.sae203.c3': 'Modélisation SQL, développement Django, débogage Python, API et tests dans une application métier.',
+    'evidence.sae302.c1': 'Communication TCP entre Windows et un serveur Debian, qui enregistre les statistiques dans MariaDB.',
+    'evidence.sae302.c3': 'Programmation Python avec PyQt6, modélisation en graphe, itinéraires calculés par Dijkstra et simulation temporisée.',
 
     'contact.tag':    'Restons en contact',
     'contact.title':  'Me contacter',
@@ -255,6 +263,12 @@ const translations = {
     'project.final.tag': 'Project 2.04',
     'project.final.title': 'Final project',
     'project.final.desc': 'Coming soon',
+    'year.second': 'Second year',
+    'project.sae302.tag': 'SAE 3.02',
+    'project.sae302.title': 'SAE 3.02 — Developing Networked Applications',
+    'project.sae302.desc': 'A Python road-traffic simulator built by the Les_Nameks team, with a weighted graph, Dijkstra routes and traffic-light simulation.',
+    'project.sae302.reflect': '💡 A group project bringing together algorithms, a graphical interface and communication between Windows and a Debian server.',
+    'project.sae302.status': 'Development complete',
 
 
     'sae101.reflect':  '💡 I really got to understand how malware works and learned to explain technical stuff in a simple way so anyone can get it.',
@@ -283,7 +297,7 @@ const translations = {
     'skills.ue21.ac1': 'Configure the basic functions of a local network.',
     'skills.ue21.ac2': 'Understand digital systems, information coding and the foundations of the Internet.',
     'skills.ue21.ac3': 'Identify local network malfunctions and know how to report them.',
-    'skills.ue21.projects': 'Related projects 1.01, 1.02 and 2.01',
+    'skills.ue21.projects': 'Related projects 1.01, 1.02, 2.01 and 3.02',
     'skills.ue22':     'C2 - Connect',
     'skills.ue22.sub': 'Connect businesses and users',
     'skills.ue22.ac1': 'Measure, analyse and comment on signals.',
@@ -295,7 +309,7 @@ const translations = {
     'skills.ue23.ac1': 'Read, run, correct and modify a program.',
     'skills.ue23.ac2': 'Understand the architecture and technologies of a website.',
     'skills.ue23.ac3': 'Choose suitable data management mechanisms.',
-    'skills.ue23.projects': 'Related projects 1.04, 1.05 and 2.03',
+    'skills.ue23.projects': 'Related projects 1.04, 1.05, 2.03 and 3.02',
 
     'skill.proof.ue21': 'BUT 1 level for assisting the network administrator',
     'skill.proof.ue22': 'BUT 1 level for discovering transmissions and ToIP',
@@ -340,6 +354,8 @@ const translations = {
     'evidence.saegns3.c1': 'Building a full infrastructure with VLANs, routing, network services, ACLs and port-security.',
     'evidence.sae202.c2': 'Characterising a communicating system with ESP32, audio streams, WiFi, VS1053 registers and MQTT control.',
     'evidence.sae203.c3': 'SQL modelling, Django development, Python debugging, API work and tests in a business application.',
+    'evidence.sae302.c1': 'TCP communication between Windows and a Debian server, which stores the statistics in MariaDB.',
+    'evidence.sae302.c3': 'Python programming with PyQt6, graph modelling, Dijkstra route calculation and timer-driven simulation.',
 
     'contact.tag':    'Let\'s connect',
     'contact.title':  'Get in touch',
@@ -494,12 +510,33 @@ const projectCardGroups = {
       noDetail: true,
     },
   ],
+  year2: [
+    {
+      key: 'sae302',
+      tagKey: 'project.sae302.tag',
+      statusKey: 'project.sae302.status',
+      titleKey: 'project.sae302.title',
+      descKey: 'project.sae302.desc',
+      reflectKey: 'project.sae302.reflect',
+      competences: [
+        { key: 'c1', evidenceKey: 'evidence.sae302.c1' },
+        { key: 'c3', evidenceKey: 'evidence.sae302.c3' },
+      ],
+      badges: [
+        { label: 'Python', color: 'blue' },
+        { label: 'PyQt6', color: 'purple' },
+        { label: 'Dijkstra', color: 'orange' },
+        { label: 'TCP', color: 'green' },
+        { label: 'MariaDB', color: 'red' },
+      ],
+    },
+  ],
 };
 
 const skillProjectMap = {
-  c1: ['sae101', 'sae102', 'saegns3'],
+  c1: ['sae101', 'sae102', 'saegns3', 'sae302'],
   c2: ['sae103', 'sae202'],
-  c3: ['sae104', 'sae105', 'sae203'],
+  c3: ['sae104', 'sae105', 'sae203', 'sae302'],
 };
 
 const htmlEntities = {
@@ -570,7 +607,7 @@ function renderProjectCard(project) {
     : '';
   const evidence = renderProjectEvidence(project);
   const tags = badges ? `<div class="card-tags">${badges}</div>` : '';
-  const detailButton = project.noDetail ? '' : `<button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog" aria-label="Voir les détails du projet ${escapeHTML(tag)}">${getBaseText('modal.btn.detail')}</button>`;
+  const detailButton = project.noDetail ? '' : `<button class="card-detail-btn" type="button" data-i18n="modal.btn.detail" aria-haspopup="dialog">${getBaseText('modal.btn.detail')}</button>`;
 
   return `
     <article class="project-card fade-in${featuredClass}"${project.noDetail ? '' : ` data-project="${escapeHTML(project.key)}"`}${competenceAttr}>
@@ -679,6 +716,14 @@ function applyTranslations(lang) {
     const key = el.dataset.i18n;
     const value = t[key];
     if (value !== undefined) el.innerHTML = value;
+  });
+  document.querySelectorAll('[data-project] .card-detail-btn').forEach(btn => {
+    const projectKey = btn.closest('[data-project]')?.dataset.project;
+    const project = projectKey ? getProjectConfig(projectKey) : null;
+    if (!project) return;
+    const title = t[project.titleKey] || translations.fr[project.titleKey] || projectKey;
+    const prefix = lang === 'fr' ? 'Voir les détails de ' : 'View details for ';
+    btn.setAttribute('aria-label', `${prefix}${title}`);
   });
   document.documentElement.setAttribute('lang', lang);
   updateSemesterToggleLabels();
@@ -915,6 +960,15 @@ const projectModals = {
       proof: 'Sujet du projet 2.01 et capture de la topologie disponibles ci-dessous.',
       images: ['Doc/SAE%202.01/Capture%20d%27%C3%A9cran%202026-06-09%20105413.png', 'Doc/SAE%202.01/sujet-SAE2.01.pdf'],
     },
+    sae302: {
+      tag: 'SAE 3.02',
+      title: 'SAE 3.02 — Développer des applications communicantes',
+      context: 'SAE 3.02 — Développer des applications communicantes est un projet scolaire réalisé en groupe sous le nom Les_Nameks. Nous avons développé une application Windows en Python avec PyQt6 pour représenter un réseau routier, calculer les trajets des véhicules et simuler la circulation. Le graphe peut être créé et modifié avec des nœuds et des routes pondérées ; un graphe de test préconfiguré comprend 26 nœuds et sept feux. Les véhicules peuvent être créés, suivent leur itinéraire, s’arrêtent aux feux et respectent une distance de sécurité. L’interface permet de démarrer ou mettre en pause la simulation, régler la densité et consulter les statistiques en temps réel.',
+      learned: 'Le travail d’équipe a mobilisé la modélisation d’un réseau en graphe et l’algorithme de Dijkstra, qui calcule un chemin de coût minimal selon le poids des routes. La simulation s’appuie sur les timers de PyQt6 pour faire avancer les véhicules et coordonner les feux, les distances de sécurité et certaines situations de bouchon. Elle gère aussi les véhicules prioritaires : les voitures adaptent leur comportement lorsqu’un véhicule prioritaire approche. Le trajet calculé s’affiche lorsque l’on sélectionne un véhicule. Les véhicules sont représentés par des rectangles ; ceux qui sont prioritaires disposent d’un gyrophare bleu et rouge.',
+      badges: ['Python', 'PyQt6', 'Dijkstra', 'TCP sockets', 'Threads', 'MariaDB', 'Debian', 'SQL', 'Git'],
+      proof: '<p><strong>Architecture réseau.</strong> L’application Windows calcule six statistiques, puis un client Python les envoie sous forme de JSON par socket TCP. L’envoi s’effectue dans un thread pour préserver la réactivité de l’interface. Sur Debian, un serveur Python reçoit les messages et gère les connexions avec des threads ; c’est le serveur qui enregistre les données dans MariaDB. L’application Windows ne se connecte donc pas directement à la base.</p><p><strong>Indicateurs suivis.</strong> Véhicules actifs, véhicules arrivés à destination, véhicules prioritaires, temps moyen des trajets, véhicules en attente aux feux et véhicules bloqués dans les bouchons. Ils sont visibles dans l’interface et peuvent être enregistrés dans MariaDB.</p><p><strong>État du projet.</strong> Le simulateur et la communication Windows–serveur TCP–MariaDB ont été testés dans l’environnement de travail. La procédure de déploiement sur une VM Debian vierge est documentée, mais n’a pas encore été entièrement validée sur une nouvelle VM. La cartographie OpenStreetMap expérimentale est désactivée.</p>',
+      images: [],
+    },
   },
   en: {
     sae101: {
@@ -997,6 +1051,15 @@ const projectModals = {
       badges: ['GNS3', 'Cisco IOS', 'VLAN 802.1Q', 'Spanning-Tree', 'RIPv2', 'DHCP', 'FTP', 'Apache', 'rsync', 'ACL', 'port-security', 'VLSM'],
       proof: 'Project 2.01 brief and topology screenshot available below.',
       images: ['Doc/SAE%202.01/Capture%20d%27%C3%A9cran%202026-06-09%20105413.png', 'Doc/SAE%202.01/sujet-SAE2.01.pdf'],
+    },
+    sae302: {
+      tag: 'SAE 3.02',
+      title: 'SAE 3.02 — Developing Networked Applications',
+      context: 'SAE 3.02 — Developing Networked Applications is a group project completed under the team name Les_Nameks. We built a Windows application in Python with PyQt6 to represent a road network, calculate vehicle routes and simulate traffic. The graph can be created and edited using nodes and weighted roads; a preconfigured test graph contains 26 nodes and seven traffic lights. Vehicles can be created, follow their routes, stop at lights and keep a safe distance. The interface lets users start or pause the simulation, adjust traffic density and view live statistics.',
+      learned: 'The team modelled the road network as a graph and used Dijkstra to find the lowest-cost route based on road weights. PyQt6 timers advance vehicles and coordinate traffic lights, safety distances and some traffic-jam situations. The simulation also handles priority vehicles: regular cars adapt their behaviour when a priority vehicle approaches. Selecting a vehicle displays its calculated route. Vehicles appear as rectangles, while priority vehicles have a blue and red flashing light.',
+      badges: ['Python', 'PyQt6', 'Dijkstra', 'TCP sockets', 'Threads', 'MariaDB', 'Debian', 'SQL', 'Git'],
+      proof: '<p><strong>Network architecture.</strong> The Windows application calculates six statistics, then a Python client sends them as JSON over a TCP socket. Sending runs in a thread so the interface remains responsive. On Debian, a Python server receives the messages and handles connections with threads; the server inserts the data into MariaDB. The Windows application does not connect directly to the database.</p><p><strong>Statistics.</strong> Active vehicles, vehicles reaching their destination, priority vehicles, average journey time, vehicles waiting at traffic lights and vehicles stuck in traffic jams. They are visible in the interface and can be stored in MariaDB.</p><p><strong>Project status.</strong> The simulator and Windows–TCP server–MariaDB communication were tested in the team’s working environment. The deployment procedure for a fresh Debian VM is documented, but has not yet been fully validated on a new VM. Experimental OpenStreetMap mapping is disabled.</p>',
+      images: [],
     },
   },
 };
